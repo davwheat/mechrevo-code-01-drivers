@@ -1,0 +1,20 @@
+------- Automatic driver installer could not roll back to inbox driver --------
+
+  Users may want run the automatic driver installer to remove the driver 
+    but the driver does not roll-back to inbox driver successfully.
+
+  For users would like to use inbox, please accords the following procedure.
+
+  a. Use automatic driver installer to remove the program first.
+  b. WIN + R and 'devmgmt.msc' to invoke 'Device Manager'
+  c. double click the corresponding network adapter
+  d. choose 'driver' property page
+  e. click 'update driver...'
+  f. click 'Let me pick from a list of device drivers on my computer...'
+  g. choose one of 'Realtek ... (Microsoft)'
+  h. roll back to inbox driver now
+  
+
+PS. The automatic installer roll back to inbox driver after installer removed.
+
+PS. DO NOT USE 'Uninstall' from device manager. Please use update driver instead

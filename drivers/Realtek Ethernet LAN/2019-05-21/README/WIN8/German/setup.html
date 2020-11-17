@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Treiberinstallation</H3>
+Gehen Sie zur Installation des Treibers folgenderma&szlig;en vor 
+<ol>
+<li> &Ouml;ffnen Sie die selbstausf&uuml;hrende Datei &quot;setup.exe&quot;
+<li> Folgen Sie den Anweisungen, die das Installationsprogramm setup.exe Ihnen anzeigt 
+</ol>
+<p> 
+<br>
+
+HINWEIS:
+<ul>
+<li>	Plug &amp; Play-Plattformen mit Windows identifizieren und konfigurieren den Adapter automatisch. Unterbrechen Sie bitte die automatische Installation von Windows. <li>	F&uuml;r die Installation des Treiber m&uuml;ssen Sie &uuml;ber Administratorenrechte verf&uuml;gen.
+</ul>
+
+<P>
+<BR>
+
+<H3>Manuelle Installation </H3>
+Bei der manuellen Installation wird der Treiber über eine spezielle Installationsdatei (INF-Datei) statt über das oben beschriebene Verfahren mit der Datei „setup.exe“ installiert. Zur manuellen Treiberinstallation öffnen Sie den Geräte-Manager, erweitern die „Netzwerkadapter“-Liste (dazu auf das Pluszeichen davor klicken), klicken mit der rechten Maustaste auf Realtek FE/GbE-Controller und wählen im Kontextmenü den Eintrag Treibersoftware aktualisieren. Anschließend wählen Sie den Pfad zur INF-Datei anhand der Anweisungen auf dem Bildschirm („Auf dem Computer nach Treibersoftware suchen.“) aus. 
+<p> <br> HINWEIS:
+<ul>
+<li> Die manuelle Installation sollte nur von versierten Benutzern durchgef&uuml;hrt werden. Unerfahrene Benutzer verwenden bitte die Datei &quot;setup.exe&quot; zur Installation des Treibers.
+</ul> <p> <br>
+
+<H3>Installation im Hintergrund</H3>
+In diesem Abschnitt erfahren Sie, wie der Treiber ohne weiteren Benutzereingriff und Bildschirmmeldungen installiert werden kann. Um den Treiber im Hintergrund zu installieren, &ouml;ffnen Sie die DOS-Eingabeaufforderung und f&uuml;hren 
+ <p> 
+die Installation im Hintergrund aus
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> Deinstallation im Hintergrund 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Fehlersuche </H3>
+Falls bei der Installation des Treibers Probleme auftreten, wiederholen Sie die Installation unter genauer Beachtung der Anweisungen im obigen Abschnitt. Falls die Installation trotzdem fehlschl&auml;gt, wenden Sie sich an unsere Kundendienstabteilung. Weitere Informationen erhalten Sie auf unserer Website.
+</BODY>
+</HTML>

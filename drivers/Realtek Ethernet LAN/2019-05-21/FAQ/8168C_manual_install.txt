@@ -1,0 +1,23 @@
+   If manually install only choose the driver path, 8168C advance options could not appear.
+
+   This is because OS choose 8168B options for the 8168C device.
+
+   ----------------------------------------------------------------------------------------
+
+   If you want install manually without auto installer, please install by 'Have Disk' and then choose 8168C.
+
+  b. WIN + R and 'devmgmt.msc' to invoke 'Device Manager'
+  c. double click the corresponding network adapter
+  d. choose 'driver' property page
+  e. click 'update driver...'
+  f. click 'Let me pick from a list of device drivers on my computer...'
+  h. click 'Have Disk...'
+  g. choose 8168C , DO NOT choose 8168B
+  h. install the driver
+
+   ----------------------------------------------------------------------------------------
+
+   After installation, please ensure the device name is '8168C' , not '8168B'.
+
+   The driver options are different between the two cards.
+

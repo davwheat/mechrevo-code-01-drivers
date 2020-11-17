@@ -1,0 +1,8 @@
+/L : Setup language
+
+For example,
+
+Setup.exe /L1031
+
+is german
+

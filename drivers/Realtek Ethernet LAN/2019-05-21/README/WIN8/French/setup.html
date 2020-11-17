@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Installation du pilote</H3>
+Pour installer le pilote, proc&eacute;dez comme suit 
+<ol>
+<li> Lancez le fichier ex&eacute;cutable &laquo;&nbsp;setup.exe&nbsp;&raquo;
+<li> Proc&eacute;dez selon les instructions affich&eacute;es par le programme setup.exe 
+</ol>
+<p> 
+<br>
+
+REMARQUE:
+<ul>
+<li>	Sur les plates-formes Plug and Play de Windows, l'adaptateur sera identifi&eacute; et configur&eacute; automatiquement. Arr&ecirc;tez toutes les installations automatiques du syst&egrave;me Windows. <li>	Pour installer le pilote, vous devez disposer du privil&egrave;ge d'administrateur.
+</ul>
+
+<P>
+<BR>
+
+<H3>Installation manuelle </H3>
+L'installation manuelle consiste à utiliser le fichier d'installation (INF) et non le lien « setup.exe » mentionné ci-dessus pour installer le pilote. Pour installer le pilote manuellement, ouvrez le Gestionnaire de périphériques, développez la liste arborescente des adaptateurs du réseau, sélectionnez "Contrôleur de la Gamme Realtek FE/GbE" et cliquez ensuite avec le bouton droit de la souris, exécutez l'option de mise à jour des pilotes.... et procédez selon les instructions pour indiquer le chemin du fichier INF. 
+<p> <br>REMARQUE:
+<ul>
+<li> L'installation manuelle est r&eacute;serv&eacute;e aux utilisateurs exp&eacute;riment&eacute;s. Les autres utilisateurs se servent du fichier &laquo; setup.exe&nbsp;&raquo; pour proc&eacute;der &agrave; l'installation du pilote.
+</ul> <p> <br>
+
+<H3>Installation en mode autonome</H3>
+La section d&eacute;crit le processus d'installation du pilote sans l'affichage de bo&icirc;tes de dialogue sur l'&eacute;cran de l'utilisateur et sans surveillance de l'utilisateur. Si vous devez installer le pilote en mode autonome, vous pouvez lancer l'invite DOS et ex&eacute;cuter 
+ <p> 
+Installation en mode autonome
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR>Suppression en mode autonome  
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> D&eacute;pannage </H3>
+Si des probl&egrave;mes surviennent pendant la phase d'installation du pilote, suivez soigneusement les instructions stipul&eacute;es dans la section Installation pour recommencer le processus. Si vous avez besoin d'assistance, contactez notre service d'assistance technique. Pour de plus amples informations, visitez notre site Web.
+</BODY>
+</HTML>

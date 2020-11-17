@@ -1,0 +1,7 @@
+Setup.exe /s /f1"C:\Temp\uninstall.iss"
+
+Note: 
+
+1. It MUST use absoluate path.
+2. DO NOT forget "
+

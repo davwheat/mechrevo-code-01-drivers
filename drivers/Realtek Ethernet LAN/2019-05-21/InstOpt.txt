@@ -1,0 +1,8 @@
+;Realtek Installer Option
+;Please do not change this file
+;detectcardandreboot
+dsminstforcenicexist
+10ec
+8168
+0000
+0000

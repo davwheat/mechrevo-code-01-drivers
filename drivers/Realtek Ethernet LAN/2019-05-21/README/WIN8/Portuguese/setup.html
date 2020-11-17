@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Instala&ccedil;&atilde;o do controlador</H3>
+Para instalar o controlador, fa&ccedil;a o seguinte
+<ol>
+<li> Abra o ficheiro execut&aacute;vel &quot;setup.exe&quot;
+<li> Siga as instru&ccedil;&otilde;es mostradas pelo programa setup.exe
+</ol>
+<p> 
+<br>
+
+NOTA:
+<ul>
+<li>	Nas plataformas Windows Plug and Play, o controlador &eacute; identificado e configurado automaticamente. P&aacute;re a instala&ccedil;&atilde;o autom&aacute;tica por parte do sistema operativo Windows. <li>	Para instalar o controlador, tem de ter privil&eacute;gios de administrador.
+</ul>
+
+<P>
+<BR>
+
+<H3>Instala&ccedil;&atilde;o manual</H3>
+A instalação manual permite-lhe instalar o controlador através do ficheiro INF em vez de usar o ficheiro "setup.exe" mencionado acima. Para instalar o controlador manualmente, abra o Gestor de dispositivos, expanda a lista de Placas de rede, seleccione "Realtek série FE/GbE", clique com o botão direito do rato e abra o item Actualizar controlador. Navegue até à pasta que contém o ficheiro INF. 
+<p> <br> NOTA：
+<ul>
+<li> A instala&ccedil;&atilde;o manual deve ser usada apenas pelos utilizadores mais experientes. Os outros utilizadores devem usar o ficheiro &quot;setup.exe&quot; para instalar o controlador.
+</ul> <p> <br>
+
+<H3>Instala&ccedil;&atilde;o silenciosa</H3>
+Esta sec&ccedil;&atilde;o descreve a instala&ccedil;&atilde;o do controlador sem que seja mostrada qualquer caixa de di&aacute;logo no ecr&atilde; e sem que seja necess&aacute;ria a presen&ccedil;a do utilizador. Se quiser instalar o controlador de forma silenciosa, abra a prompt do DOS e execute o comando seguinte 
+ <p> 
+para uma instala&ccedil;&atilde;o silenciosa
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> ou o comando abaixo para uma remo&ccedil;&atilde;o silenciosa 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Resolu&ccedil;&atilde;o de problemas</H3>
+Se tiver qualquer problema durante a instala&ccedil;&atilde;o do controlador, siga atentamente as instru&ccedil;&otilde;es descritas na sec&ccedil;&atilde;o Instala&ccedil;&atilde;o para instalar novamente o controlador. Se continuar a precisar de ajuda, contacte o nosso departamento de assist&ecirc;ncia t&eacute;cnica. Para mais informa&ccedil;&otilde;es, visite o nosso web site.
+</BODY>
+</HTML>

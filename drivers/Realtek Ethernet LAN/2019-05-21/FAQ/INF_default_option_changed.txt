@@ -1,0 +1,8 @@
+------- Windows 6.209 INF Default Options Changed --------
+
+a. "WOL & Shutdown Link Speed" default option changes from "100Mbps First" to "10Mbps First"
+
+  This is for power saving.
+
+  Please refer "WOL_AND_Shutdown_Link_Speed_OPTION.txt" for detail.
+

@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Instalaci&oacute;n de los controladores</H3>
+Para instalar el controlador, haga lo siguiente: 
+<ol>
+<li> Abra el archivo ejecutable &quot;setup.exe&quot;.
+<li> Siga las instrucciones que se muestran en el programa setup.exe. 
+</ol>
+<p> 
+<br>
+
+NOTA:
+<ul>
+<li>	En plataformas Windows Plug and Play, el adaptador se identificar&aacute; y configurar&aacute; autom&aacute;ticamente. Detenga la instalaci&oacute;n autom&aacute;tica del sistema Windows. <li>	Para instalar el controlador deber&aacute; tener privilegios de administrador.
+</ul>
+
+<P>
+<BR>
+
+<H3>Instalaci&oacute;n manual </H3>
+La instalación manual del controlador puede realizarse utilizando el archivo (INF) en lugar del archivo "setup.exe" mencionado anteriormente. Para instalar el controlador manualmente, abra el Administrador de dispositivos, expanda la lista de adaptadores de red, seleccione "Controlador de la familia FE/GbE de Realtek", haga clic en él con el botón secundario del ratón y ejecute la opción "Actualizar controlador...". A continuación, siga las instrucciones para indicar la ruta de acceso al archivo INF. 
+<p> <br> NOTA:
+<ul>
+<li> La instalaci&oacute;n manual es un m&eacute;todo de instalaci&oacute;n para usuarios avanzados. Si usted es un usuario gen&eacute;rico, utilice el archivo &quot;setup.exe&quot; para instalar el controlador.
+</ul> <p> <br>
+
+<H3>Instalaci&oacute;n silenciosa</H3>
+Esta secci&oacute;n describe el proceso de instalaci&oacute;n del controlador sin mostrar ning&uacute;n cuadro de di&aacute;logo en la pantalla del usuario ni solicitar su intervenci&oacute;n. Si necesita instalar el controlador de modo silencioso, abra una ventana de DOS y ejecute 
+ <p> 
+Instalaci&oacute;n silenciosa
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> Desinstalaci&oacute;n silenciosa 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Soluci&oacute;n de problemas </H3>
+Si encuentra alg&uacute;n problema durante la instalaci&oacute;n del controlador, siga detenidamente las instrucciones descritas en la secci&oacute;n de Instalaci&oacute;n e int&eacute;ntelo de nuevo. Si a&uacute;n necesita ayuda, p&oacute;ngase en contacto con nuestro departamento de soporte t&eacute;cnico. Para m&aacute;s informaci&oacute;n, acceda a nuestra p&aacute;gina web.
+</BODY>
+</HTML>

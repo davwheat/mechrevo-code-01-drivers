@@ -1,0 +1,17 @@
+================================ FAQ =============================
+
+Q. Why has "WOL & Shutdown Link Speed" option ?
+
+A. Realtek change "WOL & Shutdown Link Speed" to "10Mbps first" for better power saving.
+
+   Realtek add this option because some special usage case.
+
+   For example, using non store-and-forward switch and a lot of port connect to a computer.
+
+   If incoming packet is broadcast or multicast, the packet will use the IFG which is the lowest among connected ports.
+
+   It will dynamically slow down the transfer speed if you use multicast packets or broadcast packet to transfer a image.
+
+   For such case, you could change to "100Mbps first" to has better transfer speed.
+
+

@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>S&uuml;r&uuml;c&uuml; Kurulumu</H3>
+S&uuml;r&uuml;c&uuml;y&uuml; kurmak i&ccedil;in, aşağıdaki adımları izleyin 
+<ol>
+<li> Y&uuml;r&uuml;t&uuml;c&uuml; dosya &quot;setup.exe&quot;’yi &ccedil;alıştırın
+<li> setup.exe programı tarafından g&ouml;sterilen talimatları izleyin 
+</ol>
+<p> 
+<br>
+
+NOT:
+<ul>
+<li>	Tak-&Ccedil;alıştır Windows platformalarında, bağdaştırıcı otomatik olarak tanınacak ve yapılandırılacaktır. L&uuml;tfen Windows sistemi tarafından yapılan t&uuml;m otomatik kurulumları durdurun. <li>	S&uuml;r&uuml;c&uuml;y&uuml; kurmak i&ccedil;in, y&ouml;netici yetkiniz bulunmalıdır.
+</ul>
+
+<P>
+<BR>
+
+<H3>Man&uuml;el Kurulum </H3>
+Manüel kurulum, yukarıda söz edilen "setup.exe"’yi kullanmak yerine kurulum dosyası (INF) ile sürücüyü kurmak içindir. 
+Sürücüyü manüel olarak kurmak için, lütfen Aygıt Yöneticisini açın, Ağ Adaptörleri ağacı listesini genişletin, "Realtek FE/Gbe Aile Kumandası"’nı seçin ve sağ düğmeye tıklayın, Sürücüyü Güncelle menü öğesini çalıştırın... ve INF dosyasını yolunu gösteren yönlendirmeyi takip edin.
+ 
+<p> <br> NOT：
+<ul>
+<li> Man&uuml;el kurulum ileri d&uuml;zey kullanıcılar i&ccedil;in bir kurulum y&ouml;ntemidir. Genel kullanıcıların s&uuml;r&uuml;c&uuml;y&uuml; kurmak i&ccedil;in &quot;setup.exe&quot; dosyasını kullanmaları tavsiye edilir.
+</ul> <p> <br>
+
+<H3>Sessiz Kurulum</H3>
+B&ouml;l&uuml;mde kullanıcı ekranında herhangi bir iletişim kutusu g&ouml;stermeden ya da kullanıcının dikkatine gerek kalmadan s&uuml;r&uuml;c&uuml; kurma işlemi a&ccedil;ıklanmaktadır. S&uuml;r&uuml;c&uuml;y&uuml; sessiz olarak kurmanız gerekirse, DOS istemcisini a&ccedil;ıp ardından aşağıdaki dosyayı &ccedil;alıştırabilirsiniz 
+ <p> 
+Sessiz Kurulum
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> Sessiz Kaldırma 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Sorun giderme </H3>
+S&uuml;r&uuml;c&uuml; kurulum aşamasında herhangi bir sorunla karşılaşırsanız, tekrar kurmak i&ccedil;in l&uuml;tfen Kurulum b&ouml;l&uuml;m&uuml;nde belirtilen talimatları dikkatle izleyiniz. Yine de yardıma ihtiya&ccedil; duyarsanız, l&uuml;tfen teknik destek departmanımızla temasa ge&ccedil;in. Daha fazla bilgi i&ccedil;in, web sitemizi ziyaret edebilirsiniz.
+</BODY>
+</HTML>

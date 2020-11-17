@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Az illesztőprogram telep&iacute;t&eacute;se</H3>
+Az illesztőprogram telep&iacute;t&eacute;s&eacute;hez hajtsa v&eacute;gre az al&aacute;bbi l&eacute;p&eacute;seket. 
+<ol>
+<li> Ind&iacute;tsa el a &quot;setup.exe&quot; v&eacute;grehajthat&oacute; f&aacute;jlt.
+<li> K&ouml;vesse a setup.exe program &aacute;ltal megjelen&iacute;tett utas&iacute;t&aacute;sokat. 
+</ol>
+<p> 
+<br>
+
+Megjegyz&eacute;s:
+<ul>
+<li>	Az &uacute;n. &bdquo;Plug and Play&rdquo; t&iacute;pus&uacute; Windows oper&aacute;ci&oacute;s rendszerekben az adapter azonos&iacute;t&aacute;sa &eacute;s konfigur&aacute;l&aacute;sa automatikusan v&eacute;gbemegy. &Aacute;ll&iacute;tsa le a Windows rendszer &aacute;ltal automatikusan elind&iacute;tott telep&iacute;t&eacute;seket. <li>	Az illesztőprogram telep&iacute;t&eacute;s&eacute;hez adminisztr&aacute;tori jogosults&aacute;ggal kell rendelkeznie.
+</ul>
+
+<P>
+<BR>
+
+<H3>Manu&aacute;lis telep&iacute;t&eacute;s </H3>
+Manuális telepítéskor a fent említett „setup.exe” fájl helyett a telepítőfájlt (INF) kell használni az illesztőprogram telepítéséhez. Az illesztőprogram manuális telepítéséhez nyissa meg az eszközkezelőt, bontsa ki a Network adapters (Hálózati adapterek) hierarchikus listát, jelölje ki a "Realtek FE/Gbe Family Controller" opciót, és kattintson a jobb egérgombbal, majd indítsa el az Update driver... (Illesztőprogram módosítása) menüpontot, és kövesse az utasítást az INF fájl útvonalának meghatározásához. 
+<p> <br> Megjegyz&eacute;s:
+<ul>
+<li> A manu&aacute;lis telep&iacute;t&eacute;s egy olyan telep&iacute;t&eacute;si m&oacute;d, amelyet a speci&aacute;lis felhaszn&aacute;l&oacute;k hajthatnak v&eacute;gre. Az &aacute;ltal&aacute;nos felhaszn&aacute;l&oacute;knak a &quot;setup.exe&quot; f&aacute;jl haszn&aacute;lat&aacute;val kell v&eacute;grehajtaniuk az illesztőprogram telep&iacute;t&eacute;s&eacute;t.
+</ul> <p> <br>
+
+<H3>Csendes telep&iacute;t&eacute;s</H3>
+Ez a r&eacute;sz azt mutatja be, hogyan lehet oly m&oacute;don telep&iacute;teni az illesztőprogramot, hogy ne jelenjen meg p&aacute;rbesz&eacute;dpanel a felhaszn&aacute;l&oacute;i k&eacute;pernyőn, illetve ne legyen sz&uuml;ks&eacute;g a felhaszn&aacute;l&oacute; jelenl&eacute;t&eacute;re. Amennyiben csendes telep&iacute;t&eacute;s alkalmaz&aacute;s&aacute;val szeretn&eacute; telep&iacute;teni az illesztőprogramot, ind&iacute;tsa el &eacute;s hajtsa v&eacute;gre a DOS parancsot. 
+ <p> 
+Csendes telep&iacute;t&eacute;s
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> Az illesztőprogram csendes elt&aacute;vol&iacute;t&aacute;sa 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Hibaelh&aacute;r&iacute;t&aacute;s </H3>
+Amennyiben az illesztőprogram telep&iacute;t&eacute;se k&ouml;zben probl&eacute;m&aacute;kat tapasztal, k&ouml;vesse figyelmesen a &quot;Telep&iacute;t&eacute;s&quot; c&iacute;mű r&eacute;szben le&iacute;rt utas&iacute;t&aacute;sokat az &uacute;jratelep&iacute;t&eacute;shez. Amennyiben tov&aacute;bbi seg&iacute;ts&eacute;gre van sz&uuml;ks&eacute;ge, forduljon a műszaki t&aacute;mogat&aacute;st ny&uacute;jt&oacute; r&eacute;szleg&uuml;nkh&ouml;z. Tov&aacute;bbi tudnival&oacute;k&eacute;rt l&aacute;togasson el webhely&uuml;nkre.
+</BODY>
+</HTML>

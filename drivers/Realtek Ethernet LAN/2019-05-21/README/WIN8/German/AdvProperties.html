@@ -1,0 +1,273 @@
+<html >
+<head>
+<title>Erweiterte Eigenschaften</title>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+<body>
+<h3>Erweiterte Eigenschaften</h3>
+
+Erweiterte Eigenschaften lassen sich dynamisch &auml;ndern, um unterschiedlichen Einsatzumgebungen und Leistungsanspr&uuml;chen gerecht zu werden.  
+Zum Anpassen der erweiterten Eigenschaften &ouml;ffnen Sie den Ger&auml;te-Manager, erweitern die &bdquo;Netzwerkadapter&ldquo;-Liste (dazu auf das Pluszeichen davor klicken), klicken mit der rechten Maustaste auf Realtek FE/GbE-Controller und w&auml;hlen im Kontextmen&uuml; den Eintrag Eigenschaften. Das Fenster &bdquo;Eigenschaften von Realtek FE/GbE-Controller&ldquo; erscheint. Klicken Sie hier auf das Erweitert-Register.  <p>
+<br>
+
+HINWEIS:
+<ul>
+<li> Die Einstellungen der Erweiterten Eigenschaften ist f&uuml;r versierte Benutzer gedacht. Unerfahrene Benutzer verwenden bitte die Standardeinstellungen.<p>
+<li> Falsche Werte f&uuml;r die Erweiterten Eigenschaften f&uuml;hren dazu, dass keine oder nur eine schlechte Verbindung aufgebaut werden kann. In solchen F&auml;llen korrigieren Sie die Einstellung oder verwenden Sie die Standardwerte.
+</ul>
+<p> <br> 
+ 
+<hr>
+<h4> Autom. Gigabit-Deaktivierung (Energiesparen)</h4>
+Pour &eacute;conomiser de l&rsquo;&eacute;nergie, le pilote peut d&eacute;sactiver automatiquement le Gigabit lorsque le c&acirc;ble est rebranch&eacute;. 
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Deaktiviert 	<td> Deaktiviert die Funktion Autom. Gigabit-Deaktivierung (Standard)<tr> 
+<td> Wiederanschluss, Akku<td> Bei Akkubetrieb Gigabit automatisch deaktivieren, wenn das Kabel wieder angesteckt wird<tr> 
+<td> Wiederanschluss, Akku oder Netz<td> Gigabit automatisch deaktivieren, wenn das Kabel wieder angesteckt wird
+</table> <p>
+<br>
+HINWEIS:
+<ul> 
+<li>  (*) Cette fonction est seulement support&eacute;e par le Contr&ocirc;leur Ethernet Gigabit. 
+</ul>
+<p>
+<br>
+
+
+<h4>Flusssteuerung</h4>
+Der Realtek FE/GbE-Controller kann die &Uuml;bertragung von Paketen vor&uuml;bergehend stoppen, wenn er ein Flusssteuerungspaket empf&auml;ngt. Auch ist in der Lage, die &Uuml;bertragung von Paketen von der Gegenstelle durch Senden eigener Flusssteuerungspakete vor&uuml;bergehend anzuhalten, um die Sendegeschwindigkeit von Sender und Empf&auml;nger einander anzugleichen.
+ <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Funktion Flusssteuerung (Standard)<tr> 
+<td> Deaktiviert	<td> Deaktiviert die Funktion Flusssteuerung
+</table> <p>
+<br>
+
+<h4>&bdquo;Green&ldquo;-Ethernet</h4>
+Hierbei handelt es sich um einen Energiesparmodus. FE/GbE-Controller kann die L&auml;nge des angeschlossenen Kabels ermitteln und die Ausgangsspannung bei der &Uuml;bertragung daran anpassen; so l&auml;sst sich ein geringerer Stromverbrauch erzielen. <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Green-Ethernet-Funktion<tr> 
+<td> Deaktiviert	<td> Deaktiviert die Green-Ethernet-Funktion
+</table> <p>
+<br>
+HINWEIS:
+<ul> 
+<li>  (*) Die Standardeinstellung hängt vom jeweiligen Produkt ab. Bitte schauen Sie im Datenblatt nach.  
+</ul>
+<p>
+<br>
+<h4>Reduzierung von Interrupts</h4>
+Dynamische Einstellung der CPU-Interrupth&auml;ufigkeit entsprechend dem Netzwerktraffic. 
+Activez cette fonction pour r&eacute;duire la charge de l&rsquo;unit&eacute; centrale.
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Funktion Interruptreduzierung (Standard)<tr> 
+<td> Deaktiviert	<td> Deaktiviert die Funktion Interruptreduzierung
+</table> <p>
+<br>
+
+<h4>IPv4 Pr&uuml;fsummenverschiebung</h4> 
+Einstellung der Funktion IPv4 Pr&uuml;fsumme in der NIC-Hardware
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Deaktiviert<td>Deaktiviert die Funktion IPv4 Pr&uuml;fsumme in der NIC-Hardware<tr>
+<td>  Rx &amp; Tx aktiviert<td> Aktiviert die Funktion IPv4 Pr&uuml;fsumme in Tx und Rx in der Hardware (Standard)<tr> 
+<td> Rx Aktiviert<td>Aktiviert die Funktion IPv4 Pr&uuml;fsumme nur in Rx in der Hardware<tr> 
+<td>Tx aktiviert<td>Aktiviert die Funktion IPv4 Pr&uuml;fsumme nur in Tx in der Hardware
+</table> <p>
+<br>
+
+<h4> Jumbo Frame</h4>
+Die maximale &Uuml;bertragungseinheit f&uuml;r Ethernet betr&auml;gt 1500 Bytes. Jumbo Frame ist ein Frame mit einer L&auml;nge von &uuml;ber 1500 Bytes.  Diese Option kann verwendet werden, um die maximale &Uuml;bertragungseinheit, die von Ethernet NIC unterst&uuml;tzt wird, festzulegen. <p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>2KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 2 KB ein. <tr> 
+<td>3KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 3 KB ein.  <tr> 
+<td>4KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 4 KB ein.  <tr> 
+<td>5KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 5 KB ein.  <tr> 
+<td>6KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 6 KB ein.  <tr> 
+<td>7KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 7 KB ein.  <tr> 
+<td>8KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 8 KB ein.  <tr> 
+<td>9KB MTU<td>Stellt die L&auml;nge des Jumbo Frame auf 9 KB ein.  <tr> 
+<td>Deaktivieren<td> Deaktiviert die Funktion Jumbo Frame (Standard)
+</table> <p>
+<br>
+HINWEIS:
+<ul> 
+<li> Voraussetzung f&uuml;r die Aktivierung der Funktion Jumbo Frame ist es, dass die andere Seite ebenfalls Jumbo Frames empfangen kann.
+</ul>
+<p>
+<br>
+
+
+<h4>Large Send-Verschiebung v2(IPv4)</h4>
+Einstellung der Funktion TCP-Paketfragmentierung in der NIC-Hardware.
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Funktion IPv4-Paketfragmentierung in der NIC-Hardware (Standard)<tr> 
+<td> Deaktiviert 	<td> Deaktiviert die Funktion IPv4-Paketfragmentierung in der NIC-Hardware
+</table> <p>
+<br>
+
+<h4>Large Send-Verschiebung v2(IPv6)</h4>
+Einstellung der Funktion IPv6-Paketfragmentierung in der NIC-Hardware.
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Aktiviert<td>Aktiviert die Funktion IPv6-Paketfragmentierung in der NIC-Hardware (Standard)<tr> 
+<td> Deaktiviert<td> Deaktiviert die Funktion IPv6-Paketfragmentierung in der NIC-Hardware
+</table> <p>
+<br>
+
+
+<h4> Netzwerkadresse</h4>
+&Auml;nderung der MAC-Adresse
+<ul> 
+<ui> Standardwert：Nicht vorhanden
+</ul> 
+<p> <br> 
+
+<h4> Priorit&auml;t &amp; VLAN</h4>
+Die Daten f&uuml;r IEEE 802.1Q/p geben die Priorit&auml;t des Pakets an und das zugeh&ouml;rige VLAN. W&auml;hlen Sie diese Option, um die Funktionen &Uuml;bertragungspriorit&auml;t und VLAN Tagging/De-tagging zu aktivieren.  <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th> Beschreibung</th>  <tr>
+<td> Priorit&auml;t &amp; VLAN deaktiviert	<td> Deaktiviert die Funktionen Priorit&auml;t und VLAN Tagging/De-tagging<tr> 
+<td> Priorit&auml;t &amp; VLAN aktiviert	<td> Aktiviert die Funktionen Priorit&auml;t und VLAN Tagging/De-tagging in der Hardware (Standard)<tr> 
+<td> Priorit&auml;t aktiviert	<td> Aktiviert die Funktion Priorit&auml;t in der Hardware<tr> 
+<td> VLAN aktiviert	<td> Aktiviert die Funktionen VLAN Tagging/De-tagging in der Hardware
+</table> <p>
+<br>
+
+<h4>Empfangspuffer</h4> 
+Einstellung der Empfangspuffergr&ouml;&szlig;e
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Bereich</th>  <tr>
+<td> Empfangspuffergr&ouml;&szlig;e<td> 1~512 (Standard: 512)
+</table> <p>
+<br>
+
+<h4>Empfangsseitige Skalierung</h4> 
+Receive Side Scaling (RSS) est un m&eacute;canisme de balance de la charge pour assigner dynamiquement l&rsquo;unit&eacute; centrale multi-core ou plusieurs unit&eacute;s centrales &agrave; traiter les paquets re&ccedil;us.  <p> 
+<table border=1 cellspacing=4 width=85%>
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Funktion Empfangsseitige Skalierung (Standard)<tr> 
+<td> Deaktiviert<td>Deaktiviert die Funktion Empfangsseitige Skalierung
+</table> <p>
+<br>
+HINWEIS:
+<ul>
+<li> Bitte lesen Sie im Datenblatt nach, ob der Realtek FE/GbE-Controller dieses Merkmal unterst&uuml;tzt.
+</ul> <p><br>
+
+<h4>WOL-Aufweckfunktion</h4>
+Einstellung der Funktion Wake-On-Lan (Aufwachen bei LAN-Signal) nach dem Herunterfahren.
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td> Aktiviert	<td> Aktiviert die Funktion WOL-Aufwachen nach dem Herunterfahren (Standard)<tr> 
+<td> Deaktiviert	<td> Deaktiviert die Funktion WOL-Aufwachen nach dem Herunterfahren
+</table> <p>
+<br>
+
+<h4> Geschwindigkeit &amp; Duplex</h4>
+&Auml;nderung von Verbindungsgeschwindigkeit und Duplexmodus<p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Autom. Verhandlung<td>  Die unterst&uuml;tzte Verbindungsgeschwindigkeit und der Duplexmodus werden mit dem verbundenen Ger&auml;t automatisch verhandelt (Standard)<tr> 
+<td>10 MBit/s Half Duplex<td>Einstellung von Verbindungsgeschwindigkeit und Duplexmodus auf 10 MBit/s/Half Duplex<tr> 
+<td> 10 MBit/s Full Duplex<td>Einstellung von Verbindungsgeschwindigkeit und Duplexmodus auf 10 MBit/s/Full Duplex<tr> 
+<td> 100 MBit/s Half Duplex<td>Einstellung von Verbindungsgeschwindigkeit und Duplexmodus auf 100 MBit/s/Half Duplex<tr>
+<td> 100 MBit/s Full Duplex<td>Einstellung von Verbindungsgeschwindigkeit und Duplexmodus auf 100 MBit/s/Full Duplex<tr> 
+<td> 1.0 GBit/s Full Duplex<td>Einstellung von Verbindungsgeschwindigkeit und Duplexmodus auf 1000 MBit/s/Full Duplex (*)
+</table> <p>
+<br>
+HINWEIS:
+<ul> 
+<li>  (*) Vollduplex&uuml;bertragung mit 1 Gbps wird nur vom Gbe-Controller unterst&uuml;tzt. 
+</ul>
+<p>
+<br>
+
+
+<h4>TCP-Pr&uuml;fsummenverschiebung (IPv4)</h4> 
+Einstellung der Funktion TCP Pr&uuml;fsumme in der Hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Deaktiviert<td>Deaktiviert die Funktion TCP Pr&uuml;fsumme in der Hardware (IPv4)<tr>
+<td>   Rx &amp; Tx aktiviert<td> Aktiviert die Funktion TCP Pr&uuml;fsumme in Tx und Rx in der Hardware (IPv4) (Standard)<tr> 
+<td> Rx Aktiviert<td>Aktiviert die Funktion TCP Pr&uuml;fsumme nur in Rx in der Hardware (IPv4)<tr> 
+<td>Tx aktiviert<td>Aktiviert die Funktion TCP Pr&uuml;fsumme nur in Tx in der Hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>TCP-Pr&uuml;fsummenverschiebung (IPv6)</h4> 
+Einstellung der Funktion TCP Pr&uuml;fsumme in der Hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Deaktivieren<td>Deaktiviert die Funktion TCP Pr&uuml;fsumme in der Hardware (IPv6)<tr>
+<td>  Rx &amp; Tx aktiviert<td>Aktiviert die Funktion TCP Pr&uuml;fsumme in Tx und Rx in der Hardware (IPv6) (Standard)<tr> 
+<td> Rx Aktiviert<td>Aktiviert die Funktion TCP Pr&uuml;fsumme nur in Rx in der Hardware (IPv6)<tr> 
+<td>Tx aktiviert<td>Aktiviert die Funktion TCP Pr&uuml;fsumme nur in Tx in der Hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>Sendepuffer</h4> 
+Einstellung der Sendepuffergr&ouml;&szlig;e
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Bereich</th>  <tr>
+<td> &Uuml;bertragungspuffergr&ouml;&szlig;e<td> 1~128 (Standard: 128)
+</table> <p>
+<br>
+
+<h4>UDP-Pr&uuml;fsummenverschiebung (IPv4)</h4> 
+Einstellung der Funktion UDP Pr&uuml;fsumme in der Hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Deaktiviert<td>Deaktiviert die Funktion UDP Pr&uuml;fsumme in der Hardware (IPv4)<tr>
+<td>  Rx &amp; Tx aktiviert<td> Aktiviert die Funktion UDP Pr&uuml;fsumme in Tx und Rx in der Hardware (IPv4) (Standard)<tr> 
+<td> Rx Aktiviert<td>Aktiviert die Funktion UDP Pr&uuml;fsumme nur in Rx in der Hardware (IPv4)<tr> 
+<td>Tx aktiviert<td>Aktiviert die Funktion UDP Pr&uuml;fsumme nur in Tx in der Hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>UDP-Pr&uuml;fsummenverschiebung (IPv6)</h4> 
+Einstellung der Funktion UDP Pr&uuml;fsumme in der Hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th> Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Deaktiviert<td>Deaktiviert die Funktion UDP Pr&uuml;fsumme in der Hardware (IPv6)<tr>
+<td> Rx &amp; Tx aktiviert<td> Aktiviert die Funktion UDP Pr&uuml;fsumme in Tx und Rx in der Hardware (IPv6) (Standard)<tr> 
+<td> Rx Aktiviert<td>Aktiviert die Funktion UDP Pr&uuml;fsumme nur in Rx in der Hardware (IPv6)<tr> 
+<td>Tx aktiviert<td>Aktiviert die Funktion UDP Pr&uuml;fsumme nur in Tx in der Hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>Wake on Magic Packet </h4> 
+Aktiviert eine spezielle Funktion, die dem Netzwerkadapter erlaubt, das System aus dem Ruhezustand oder Schlafmodus aufzuwecken, wenn ein besonderes Paket (&bdquo;Magic Packet&ldquo;) empfangen wird.
+<table border=1 cellspacing=4 width=85%> 
+<th> Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Aktiviert<td>Aktiviert die Wake on Magic Packet-Funktion (Standard)<tr>
+<td>Deaktiviert<td>Deaktiviert die Wake on Magic Packet-Funktion
+</table> <p>
+<br>
+
+<h4>Wake on Pattern Match </h4> 
+Aktiviert eine spezielle Funktion, die dem Netzwerkadapter erlaubt, das System aus dem Ruhezustand oder Schlafmodus aufzuwecken, wenn ein passendes Muster empfangen wird.
+<table border=1 cellspacing=4 width=85%> 
+<th> Optionen</th> <th>Beschreibung</th>  <tr>
+<td>Aktiviert<td>Aktiviert die Wake on Pattern Match-Funktion (Standard)<tr>
+<td>Deaktiviert<td>Deaktiviert die Wake on Pattern Match-Funktion
+</table> <p>
+<br>
+
+<h4>WOL &amp; Inaktivit&auml;t-Verbindungsgeschwindigkeit</h4> 
+Legt die Verbindungsgeschwindigkeit des Netzwerkadapters fest, wenn sich das System im Ruhezustand, Schlafmodus oder im ausgeschalteten Zustand befindet. 
+<table border=1 cellspacing=4 width=85%> 
+<th> Optionen</th> <th>Beschreibung</th>  <tr>
+<td>10 Mbps First <td>Stellt die Verbindungsgeschwindigkeit auf 10 Mbps ein, wenn sich das System im Ruhezustand, Schlafmodus oder im ausgeschalteten Zustand befindet (Standard).<tr>
+<td>100 Mbps First <td>Stellt die Verbindungsgeschwindigkeit auf 100 Mbps ein, wenn sich das System im Ruhezustand, Schlafmodus oder im ausgeschalteten Zustand befindet. 
+</table> <p>
+<br>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<html >
+<head>
+<title>詳細プロパティ</title>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+<body>
+<h3>詳細プロパティ</h3>
+
+ユーザーは動作環境とパフォーマンスへの配慮により詳細プロパティを動的に変更できます。  
+詳細プロパティの設定を変更するには、デバイスマネージャを開き、ネットワークアダプタのツリーリストを展開し、「Realtek FE/GbEファミリーコントローラー」を選択してから、マウスの右ボタンをクリックします。プロパティのメニュー項目を起動すると、Realtek FE/GbEファミリーコントローラーのプロパティが表示されるので、詳細のプロパティシートを選択してください。 <p>
+<br>
+
+注意：
+<ul>
+<li> 詳細プロパティは上級ユーザー向けです。 一般ユーザーはデフォルト値を使用してください。<p>
+<li> 詳細プロパティの設定を間違えると、接続の切断やパフォーマンスの低下の原因になります。 その場合は、このセクションを参照して、正しい設定を選択するか、デフォルト値に復元してください。
+</ul>
+<p> <br> 
+ 
+<hr>
+<h4> ギガビットの自動ディセーブル（パワーセービング）</h4>
+ケーブルが再度接続されたとき、ドライバは消費電力を節減するため自動でギガビットを無効にすることができます。 
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Disabled（使用しない） 	<td> ギガビットの自動ディセーブル機能を使用しない（デフォルト）<tr> 
+<td> Re-Link, Battery（再リンク、バッテリ）<td> バッテリを使用している場合、再リンク時ギガビットを自動ディセーブルする<tr> 
+<td> Re-Link, Battery（再リンク、バッテリまたはAC）<td> 再リンク時ギガビットを自動ディセーブルする
+</table> <p>
+<br>
+注意：
+<ul> 
+<li>  (*) ギガビット イーサネット コントローラーにのみ対応します。 
+</ul>
+<p>
+<br>
+
+
+<h4>フローコントロール</h4>
+Realtek FE/GbEファミリーコントローラーは、送信側と受信側のフローコントロールパケットの速度を一致させるため、フローコントロールパケット受信時にパケット送信を一時的に停止させ、または送信側を一時停止するためのフローコントロールパケットを送信することができます。
+送信された終了先端を一時停止するためのフローコントロールパケット
+<p>
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> フローコントロールの機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない）	<td> フローコントロールの機能を使用しない
+</table> <p>
+<br>
+
+<h4>グリーンイーサネット</h4>
+省電力モードです。 電力消費量を抑えるため、Realtek FE/GbEファミリーコントローラーは、通信のための出力電圧を決定するため接続ケーブルの長さを検知することができます。 <p>
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> グリーンイーサネットの機能を使用する<tr> 
+<td> Disabled（使用しない）	<td> グリーンイーサネットの機能を使用しない
+</table> <p>
+<br>
+注意：
+<ul> 
+<li>  (*) 製品によってデフォルト設定が異なります。データシートを参照して機能を設定してください。
+</ul>
+<p>
+<br>
+<h4>割り込み調停</h4>
+ネットワークのトラフィックに従ってCPUへの割り込み頻度を動的に変更します。 
+CPU使用を低減することのできるこの機能を有効にする。
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> 割り込み調停機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない）	<td> 割り込み調停機能を使用しない
+</table> <p>
+<br>
+
+<h4>IPv4チェックサムのオフロード</h4> 
+ハードウェアによるIPv4チェックサム機能を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Disabled（使用しない）<td>ハードウェアによるIPv4チェックサム機能を使用する<tr>
+<td>  Rx &amp; Tx Enabled（送受信で使用する）<td> 送信と受信の両方でハードウェアによるIPv4チェックサム機能を使用する<tr> 
+<td> Rx Enabled（受信で使用する）<td>受信のみでハードウェアによるIPv4チェックサム機能を使用する<tr> 
+<td>Tx Enabled（送信で使用する）<td>送信のみでハードウェアによるIPv4チェックサム機能を使用する
+</table> <p>
+<br>
+
+<h4> ジャンボフレーム</h4>
+インターネットの最大転送単位（MTU）は1500バイトです。 ジャンボフレームとは長さが1500バイトを超えるフレームのことです。  このオプションを使えば、インターネットNICがサポートする最大転送単位を設定できます。 <p>
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>2KB MTU  <td>ジャンボフレームの長さを2Kバイトに設定する <tr> 
+<td>3KB MTU  <td>ジャンボフレームの長さを3Kバイトに設定する  <tr> 
+<td>4KB MTU  <td>ジャンボフレームの長さを4Kバイトに設定する  <tr> 
+<td>5KB MTU  <td>ジャンボフレームの長さを5Kバイトに設定する  <tr> 
+<td>6KB MTU  <td>ジャンボフレームの長さを6Kバイトに設定する  <tr> 
+<td>7KB MTU  <td>ジャンボフレームの長さを7Kバイトに設定する  <tr> 
+<td>8KB MTU  <td>ジャンボフレームの長さを8Kバイトに設定する  <tr> 
+<td>9KB MTU  <td>ジャンボフレームの長さを9Kバイトに設定する  <tr> 
+<td>Disable（使用しない）<td> ジャンボフレームの機能を使用しない（デフォルト）
+</table> <p>
+<br>
+注意:
+<ul> 
+<li> ジャンボフレームの機能を使用するには、他の接続側も同機能を使用する必要があります。
+</ul>
+<p>
+<br>
+
+
+<h4>大量送信オフロードv2（IPv4）</h4>
+NICハードウェアによるTCPパケット分割機能を設定します。
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> NICハードウェアによるIPv4パケット分割機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない） 	<td> NICハードウェアによるIPv4パケット分割機能を使用しない
+</table> <p>
+<br>
+
+<h4>大量送信オフロードv2（IPv6）</h4>
+NICハードウェアによるIPv6パケット分割機能を設定します。
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Enabled（使用する）<td>NICハードウェアによるIPv6パケット分割機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない）<td> NICハードウェアによるIPv6パケット分割機能を使用しない
+</table> <p>
+<br>
+
+
+<h4> ネットワークアドレス</h4>
+MACアドレスを変更します。
+<ul> 
+<ui> デフォルト値：なし
+</ul> 
+<p> <br> 
+
+<h4> 優先制御とVLAN</h4>
+IEEE 802.1Q/pの情報はパケットの優先度と所属するVLANを示します。 オプションを設定すると、NICハードウェアの優先送信やVLANタグ付き/タグ抜きの機能を使用できるようになります。  <p>
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th> 説明</th>  <tr>
+<td> Priority &amp; VLAN Disabled（優先制御とVLANを使用しない）	<td> 優先制御とVLANタグ付き/タグ抜きの機能を使用しない<tr> 
+<td> Priority &amp; VLAN Enabled（優先制御とVLANを使用する）	<td> ハードウェアによる優先制御とVLANタグ付き/タグ抜きの機能を使用する（デフォルト）<tr> 
+<td> Priority Enabled（優先制御を使用する）	<td> ハードウェアによる優先制御機能を使用する<tr> 
+<td> VLAN Enabled（VLANを使用する）	<td> ハードウェアによるVLANタグ付き/タグ抜きの機能を使用する
+</table> <p>
+<br>
+
+<h4>受信バッファ</h4> 
+受信バッファのサイズを設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>範囲</th>  <tr>
+<td> Received buffer size（受信バッファのサイズ）<td> 1~512 (デフォルト :512) 
+</table> <p>
+<br>
+
+<h4>受信側負荷分散</h4> 
+Receive Side Scaling(RSS:サイドスケーリング受信)機能は、受信パケットの処理において、マルチコアCPUまたはマルチCPUに対してシステムの負荷変動に応じて動的にアサインを調整します。  <p> 
+<table border=1 cellspacing=4 width=85%>
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> RSS機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない）<td>RSS機能を使用しない
+</table> <p>
+<br>
+注意：
+<ul>
+<li> Realtek FE/GbEファミリーコントローラーが本機能に対応しているかはデータシートでご確認ください。
+</ul> <p><br>
+
+<h4>シャットダウンWake-On-Lan</h4>
+シャットダウン後のWake-On-Lan機能を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td> Enabled（使用する）	<td> シャットダウン後のWake-On-Lan機能を使用する（デフォルト）<tr> 
+<td> Disabled（使用しない）	<td> シャットダウン後のWake-On-Lan機能を使用しない
+</table> <p>
+<br>
+
+<h4> 速度と二重</h4>
+リンク速度と二重モードを変更します。<p>
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Auto Negotiation （自動ネゴシエーション）<td>  接続デバイスとの対応リンク速度と二重モードを自動ネゴシエーションする（デフォルト）<tr> 
+<td>10 Mbps Half Duplex（100 Mbps半二重）<td>リンク速度と二重モードを10Mbps/半二重に設定する<tr> 
+<td> 10 Mbps Full Duplex（100 Mbps全二重）<td>リンク速度と二重モードを10Mbps/全二重に設定する<tr> 
+<td> 100 Mbps Half Duplex（100 Mbps半二重）<td>リンク速度と二重モードを100Mbps/半二重に設定する<tr>
+<td> 100 Mbps Full Duplex（100 Mbps全二重）<td>リンク速度と二重モードを100Mbps/全二重に設定する<tr> 
+<td> 1.0 Gbps Full Duplex（1.0 Gbps全二重）<td>リンク速度と二重モードを1000Mbps/全二重に設定する (*)
+</table> <p>
+<br>
+注意：
+<ul> 
+<li>  (*) Gbeファミリーコントローラーは1.0 Gbps Full Duplex(1.0 Gbps全二重)のみに対応しています。 
+</ul>
+<p>
+<br>
+
+
+<h4>TCPチェックサムのオフロード（IPv4） </h4> 
+ハードウェアによるTCPチェックサム機能（IPv4）を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Disabled（使用しない）<td>ハードウェアによるTCPチェックサム機能（IPv4）を使用しない<tr>
+<td>   Rx &amp; Tx Enabled（送受信で使用する）<td> 送信と受信の両方でハードウェアによるTCPチェックサム機能（IPv4）を使用する（デフォルト）<tr> 
+<td> Rx Enabled（受信で使用する）<td>受信のみでハードウェアによるTCPチェックサム機能（IPv4）を使用する<tr> 
+<td>Tx Enabled（送信で使用する）<td>送信のみでハードウェアによるTCPチェックサム機能（IPv4）を使用する
+</table> <p>
+<br>
+
+<h4>TCPチェックサムのオフロード（IPv6） </h4> 
+ハードウェアによるTCPチェックサム機能（IPv6）を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Disable（使用しない）<td>ハードウェアによるTCPチェックサム機能（IPv6）を使用しない<tr>
+<td>  Rx &amp; Tx Enabled（送受信で使用する）<td>送信と受信の両方でハードウェアによるTCPチェックサム機能（IPv6）を使用する（デフォルト）<tr> 
+<td> Rx Enabled（受信で使用する）<td>受信のみでハードウェアによるTCPチェックサム機能（IPv6）を使用する<tr> 
+<td>Tx Enabled（送信で使用する）<td>送信のみでハードウェアによるTCPチェックサム機能（IPv6）を使用する
+</table> <p>
+<br>
+
+<h4>送信バッファ</h4> 
+送信バッファのサイズを設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>範囲</th>  <tr>
+<td> Transmit buffer size（送信バッファのサイズ）<td> 1~128 (デフォルト:128) 
+</table> <p>
+<br>
+
+<h4>UDPチェックサムのオフロード（IPv4） </h4> 
+ハードウェアによるUDPチェックサム機能（IPv4）を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th>オプション</th> <th>説明</th>  <tr>
+<td>Disabled（使用しない）<td>ハードウェアによるUDPチェックサム機能（IPv4）を使用しない<tr>
+<td>  Rx &amp; Tx Enabled（送受信で使用する）<td> 送信と受信の両方でハードウェアによるUDPチェックサム機能（IPv4）を使用する（デフォルト）<tr> 
+<td> Rx Enabled（受信で使用する）<td>受信のみでハードウェアによるUDPチェックサム機能（IPv4）を使用する<tr> 
+<td>Tx Enabled（送信で使用する）<td>送信のみでハードウェアによるUDPチェックサム機能（IPv4）を使用する
+</table> <p>
+<br>
+
+<h4>UDPチェックサムのオフロード（IPv6） </h4> 
+ハードウェアによるUDPチェックサム機能（IPv6）を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th> オプション</th> <th>説明</th>  <tr>
+<td>Disabled（使用しない）<td>ハードウェアによるUDPチェックサム機能（IPv6）を使用しない<tr>
+<td> Rx &amp; Tx Enabled（送受信で使用する）<td> 送信と受信の両方でハードウェアによるUDPチェックサム機能（IPv6）を使用する（デフォルト）<tr> 
+<td> Rx Enabled（受信で使用する）<td>受信のみでハードウェアによるUDPチェックサム機能（IPv6）を使用する<tr> 
+<td>Tx Enabled（送信で使用する）<td>送信のみでハードウェアによるUDPチェックサム機能（IPv6）を使用する
+</table> <p>
+<br>
+
+<h4>マジックパケットによるWake-On-Lan</h4> 
+マジックパケットの受信によってスリープまたは休止状態のシステムを起動させるためNICを有効にする機能を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th> オプション</th> <th>説明</th>  <tr>
+<td>Enabled（使用する）<td>マジックパケットによるWake-On-Lan機能を使用する(デフォルト)<tr>
+<td>Disabled（使用しない）<td>マジックパケットによるWake-On-Lan機能を使用しない
+</table> <p>
+<br>
+
+<h4>パターンマッチによるWake-On-Lan</h4> 
+一致したパケットパターンの受信によってスリープまたは休止状態のシステムを起動させるためNICを有効にする機能を設定します。
+<table border=1 cellspacing=4 width=85%> 
+<th> オプション</th> <th>説明</th>  <tr>
+<td>Enabled（使用する）<td>パターンマッチによるWake-On-Lan機能を使用する(デフォルト)<tr>
+<td>Disabled（使用しない）<td>パターンマッチによるWake-On-Lan機能を使用しない
+</table> <p>
+<br>
+
+<h4>Wake-On-Lanとシャットダウンリンク速度</h4> 
+システムがスリープ、休止状態またはシャットダウン状態のときのNICのリンク速度を設定します。 
+<table border=1 cellspacing=4 width=85%> 
+<th> オプション</th> <th>説明</th>  <tr>
+<td>最大10 Mbps<td>システムがスリープ、休止状態またはシャットダウン状態のときリンク速度を10 Mbpsに設定(デフォルト)<tr>
+<td>最大100 Mbps<td>システムがスリープ、休止状態またはシャットダウン状態のときリンク速度を100 Mbpsに設定
+</table> <p>
+<br>
+</body>
+</html>

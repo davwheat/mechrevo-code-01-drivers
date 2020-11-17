@@ -1,0 +1,9 @@
+================================ FAQ =============================
+
+Q. Image build by WAIK RTM (Ver. 6000) has downloading problem on specific image deploy tool
+
+A. Please use WAIK SP1 (Ver. 6001)  Realtek highly recommends that system vendors update WAIK to newer version with newer Realtek driver.
+   are identical.
+
+
+

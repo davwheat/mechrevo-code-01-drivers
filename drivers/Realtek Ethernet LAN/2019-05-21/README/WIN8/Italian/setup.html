@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>Installazione del driver</H3>
+Per installare il driver, procedere come segue:
+<ol>
+<li> Lanciare il file eseguibile &quot;setup.exe&quot;
+<li> Seguire le istruzioni visualizzate dal programma setup.exe
+</ol>
+<p> 
+<br>
+
+NOTA:
+<ul>
+<li>	Su piattaforme Windows di tipo Plug&amp;Play, l'adattatore viene automaticamente riconosciuto e configurato. Interrompere l'installazione automatica da parte di Windows. <li>	Per installare il driver &egrave; necessario disporre di privilegi di amministratore.
+</ul>
+
+<P>
+<BR>
+
+<H3>Installazione manuale</H3>
+L'installazione manuale consiste nell'installare il driver mediante il file di installazione (INF) anziché usare "setup.exe" menzionato in precedenza. Per installare il driver manualmente, aprire la Gestione periferiche, espandere la struttura Rete, selezionare "Dispositivo di controllo della famiglia Realtek FE/Gbe", fare clic con il tasto destro del mouse ed eseguire l'elemento del menu Update driver... [Aggiorna driver], quindi seguire le indicazioni per la posizione dove salvare il file INF.
+<p> <br> NOTA:
+<ul>
+<li> L'installazione manuale &egrave; consigliata agli utenti esperti. Se non si possiede sufficiente dimestichezza, utilizzare il file &quot;setup.exe&quot; per installare il driver.
+</ul> <p> <br>
+
+<H3>Installazione invisibile all'utente</H3>
+Questa sezione descrive il processo di installazione del driver nascondendo la visualizzazione di finestre di dialogo sullo schermo dell'utente e senza necessit&agrave; di azioni da parte dello stesso. Per eseguire un'installazione invisibile all'utente, lanciare il prompt di DOS ed eseguire
+ <p> 
+Installazione invisibile all'utente
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR>Disinstallazione invisibile all'utente
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> Risoluzione dei problemi</H3>
+In caso di problemi durante l'installazione del driver, seguire attentamente le istruzioni descritte nella relativa sezione per ripetere la procedura. Se il problema persiste, rivolgersi all'assistenza tecnica. Maggiori informazioni sono disponibili sul sito Web Realtek.
+</BODY>
+</HTML>

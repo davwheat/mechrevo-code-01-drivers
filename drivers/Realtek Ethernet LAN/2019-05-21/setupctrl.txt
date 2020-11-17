@@ -1,0 +1,26 @@
+;Install
+
+;WINXP
+;InstXp8168
+;InstXp8169
+
+;WINVISTA and WIN7
+;InstVista8139
+;InstVista8169
+
+
+;Uninsall
+;WINXP
+;UninstXp8168
+;UninstXp8169
+
+;WINVISTA and WIN7
+;UninstVista8139
+;UninstVista8169
+
+;EnableModifyButton
+
+;UninstNicDrvBeforeInst
+
+INST_KILL_PROCESS
+Realtek - Ethernet Diagnostic Utility

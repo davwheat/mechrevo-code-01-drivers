@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>setup.html</TITLE>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</HEAD>
+
+<H3>드라이버 설치</H3>
+드라이버를 설치하려면 다음과 같이 진행하십시오.
+<ol>
+<li> 실행 파일 &quot;setup.exe&quot;를 시작합니다.
+<li> setup.exe 프로그램에 의해 표시된 지침을 따릅니다.
+</ol>
+<p> 
+<br>
+
+참고:
+<ul>
+<li>	Plug &amp; Play Windows 플랫폼에서 어댑터가 자동으로 식별되어 구성됩니다. Windows 시스템에 의한 모든 자동 설치를 멈춰 주십시오. <li>	드라이버를 설치하려면 관리자 권한이 있어야 합니다.
+</ul>
+
+<P>
+<BR>
+
+<H3>수동 설치</H3>
+수동 설치는 위에서 언급한 "setup.exe" 대신 설치 파일(INF)을 사용해 드라이버를 설치하는 것입니다. 드라이버를 수동으로 설치하려면 [장치 관리자]를 열고 네트워크 어댑터 트리 목록을 확장한 다음 "Realtek FE/Gbe 계열 컨트롤러"를 선택하고 마우스의 오른쪽 버튼을 클릭한 다음 [드라이버 업데이트] 메뉴 항목을 실행합니다. 지침을 따라 INF 파일의 경로를 표시합니다.
+<p> <br> 참고:
+<ul>
+<li> 수동 설치는 일종의 고급 사용자에 의한 설치 방법입니다. 일반 사용자는 &quot;setup.exe&quot;를 사용하여 드라이버를 설치하시기 바랍니다.
+</ul> <p> <br>
+
+<H3>자동 설치</H3>
+이 절에서는 사용자의 화면에서 대화 상자를 표시하거나 사용자의 개입을 요구하지 않고 드라이버를 설치하는 절차에 대해 설명합니다. 드라이버를 자동으로 설치할 필요가 있을 경우 DOS 프롬프트를 띄우고 
+ <p> 
+자동 설치를 실행할 수 있습니다.
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s
+</PRE>
+</ul>
+<BR> 자동 설치 제거 
+<ul>
+<PRE>C:&gt;%driver_path%\setup.exe /s /f1&quot;.\uninstall.iss&quot;
+</PRE>
+</ul>
+
+<BR>
+
+<H3> 문제 해결 </H3>
+드라이버 설치 단계에서 문제가 발생하는 경우 다시 설치하기 위해 설치 절에서 설명된 지침을 주의깊게 따라 주시기 바랍니다. 여전히 도움이 필요하신 경우 기술 지원 부서에 연락하시기 바랍니다. 당사 웹사이트에 액세스하면 자세한 정보를 얻으실 수 있습니다.
+</BODY>
+</HTML>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>setup.html</title>
+
+
+
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css"></head><body><h3>驱动程序安装</h3>
+安装驱动程序时，请按照下列步骤：
+<ol>
+<li>执行安装程序文件 "setup.exe"
+</li>
+  <li>按照安装程序中显示的指示说明进行安装 
+  </li>
+</ol>
+<p> 
+<br>
+
+
+注意:</p>
+<ul>
+<li>	在支持即插即用的Windows版本上，系统会自动搜索、识别和设置网卡。
+	请取消操作系统自动安装驱动程序的所有进程。<br>
+</li><li>	安装驱动程序时，您必须使用系统管理员权限。</li><li>如果安装/移除驱动程式时显示乱码，请使用AutoInst.exe再次安装/移驱动程式。<br>
+
+"AutoInst.exe"的使用方式与"setup.exe"相同。</li>
+</ul>
+<br>
+<ul></ul>
+
+<p>
+<br>
+
+</p><h3>手动安装驱动程序 </h3>
+手动安装驱动程序是指安装驱动程序时不使用Setup.exe程序进行安装，而是通过INF安装文件进行驱动程序安装。<p>
+手动安装时请开启设备管理器，展开网络适配器设备，选择Realtek RTL81XX Ethernet NIC网卡后，按下右键，
+执行更新驱动程序，选择从列表或者指定位置安装(高级)，并按对话框提示指定INF安装文件的路径进行安装。
+</p><p> <br>
+注意：
+</p><ul>
+<li>手动安装驱动程序是属于高级使用者的一种安装方式， 建议一般使用者采用setup.exe来安装驱动程序。
+</li></ul> <p> <br>
+
+</p><h3>无信息安装</h3>
+
+无信息安装是指安装驱动程序的过程中，不会显示对话框在屏幕上一级无需使用者介入操作的背景安装。
+若需进行无信息安装或者卸载，可在命令行窗口下，执行下列命令 <p> 
+无信息驱动程序安装
+</p><ul>
+<pre>C:&gt;%driver_path%\setup.exe /s<br></pre>
+</ul>
+<br>
+无信息驱动程序卸载
+<ul>
+<pre>C:&gt;%driver_path%\setup.exe /s /f1".\uninstall.iss"<br></pre>
+</ul>
+
+<br>
+
+<h3>故障排除</h3>
+若在安装驱动程序软件时遇到任何问题，请重新仔细阅读以上安装说明以及故障排除章节，并且再尝试重新安装一次。
+若问题仍未改善，可至本公司网站浏览下载最新版的驱动程序重新安装，或与本公司技术服务部门联络。
+</body></html>

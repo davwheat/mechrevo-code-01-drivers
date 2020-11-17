@@ -1,0 +1,12 @@
+================================ FAQ =============================
+
+Q. Device management appears code 10 error if multiple 8169/8168/8101 cards installed.
+
+A. Please re-install the driver to all Realtek network card to ensure all the driver
+   are identical.
+
+Q. The driver can not install sucessfully after the network card drver selected
+
+A. Try to use 'browse my compter ...' , ' let me pick ... ' , 'Have Disk' to install
+   the driver
+

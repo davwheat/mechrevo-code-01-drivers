@@ -1,0 +1,274 @@
+<html >
+<head>
+<title>Propriet&agrave; avanzate</title>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+<body>
+<h3>Propriet&agrave; avanzate</h3>
+
+Gli utenti possono regolare le propriet&agrave; avanzate dinamicamente a seconda dell'ambiente operativo e dei fattori prestazionali.  
+Per regolare le impostazioni delle propriet&agrave; avanzate, aprire Gestione periferiche, espandere la struttura dell'elenco degli adattatori di rete, selezionare &quot;Dispositivo di controllo della famiglia Realtek FE/GbE&quot;, fare clic con il pulsante destro del mouse e lanciare il menu e lanciare la voce di menu Properties [Propriet&agrave;] per aprire il menu delle propriet&agrave; &quot;Dispositivo di controllo della famiglia Realtek FE/GbE&quot; e selezionare la scheda Advanced [Avanzate]. <p>
+<br>
+
+NOTA:
+<ul>
+<li> Le impostazioni delle propriet&agrave; avanzate sono per utenti esperti. Se non si possiede sufficiente dimestichezza, utilizzare le impostazioni predefinite.<p>
+<li> Un'errata impostazione delle propriet&agrave; avanzate pu&ograve; causare errori di connessione o una diminuzione delle prestazioni. In tal caso, consultare questa sezione per selezionare le impostazioni corrette o ripristinare i valori predefiniti.
+</ul>
+<p> <br> 
+ 
+<hr>
+<h4> Disabilitazione automatica gigabit (risparmio energia)</h4>
+A scopo di risparmio energetico, il driver pu&ograve; disabilitare automaticamente I Gigabit quando il cavo viene ricollegato. 
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Disabilitato 	<td> Disabilita la funzione di disabilitazione automatica Gigabit (impostazione predefinita) <tr> 
+<td> Ricollegamento, batteria<td> Quando si utilizza la batteria, disabilita automaticamente il gigabit al ricollegamento<tr> 
+<td> Ricollegamento, batteria o AC<td> Disabilita automaticamente il gigabit al ricollegamento
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) La funzione &egrave; supportata solo per il controller Gigabit Ethernet. 
+</ul>
+<p>
+<br>
+
+
+<h4>Controllo del flusso</h4>
+Il Dispositivo di controllo della famiglia Realtek FE/GbE pu&ograve; arrestarsi temporaneamente per trasmettere pacchetti mentre riceve pacchetti di controllo del flusso, oppure pu&ograve; inviare pacchetti di controllo del flusso per mettere in pausa il lato trasmesso, per abbinare la velocit&agrave; del lato trasmesso e di quello ricevuto.
+Il pacchetto di controllo del flusso mette in pausa la parte terminale trasmessa<p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione di controllo del flusso (impostazione predefinita) <tr> 
+<td> Disabilitato	<td> Disabilita la funzione di controllo del flusso
+</table> <p>
+<br>
+
+<h4>Green Ethernet</h4>
+&Egrave; una modalit&agrave; di risparmio eneregetico. Il dispositivo di controllo della famiglia Realtek FE/GbE &egrave; in grado di rilevare la lunghezza del cavo inserito cos&igrave; da determinare la tensione in uscita della trasmissione e di raggiungere un consumo energetico bassissimo. <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione Green Ethernet<tr> 
+<td> Disabilitato	<td> Disabilita la funzione Green Ethernet
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) L’impostazione predefinita dipende dal prodotto. Fare riferimento alla scheda tecnica per impostare questa funzione.
+</ul>
+<p>
+<br>
+<h4>Interrupt Moderation</h4>
+Regola dinamicamente la frequenza dell'interrupt della CPU sulla base del traffico di rete. 
+Abilitando questa funzione pu&ograve; abbassare l'utilizzo della CPU.
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione di interrupt moderation (impostazione predefinita) <tr> 
+<td> Disabilitato	<td> Disabilita la funzione di interrupt moderation
+</table> <p>
+<br>
+
+<h4>IPv4 Checksum Offload </h4> 
+Imposta la funzione di checksum IPv4 dell'hardware
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Disabilitato<td>Disabilita la funzione di checksum IPv4 dell'hardware<tr>
+<td>  Rx &amp; Tx Abilitata<td> Abilita la funzione di checksum IPv4 sia in Tx sia in Rx dell'hardware (impostazione predefinita)<tr> 
+<td> Rx Abilitata<td>Abilita la funzione di checksum IPv4 solo in Rx dell'hardware<tr> 
+<td>Tx Abilitata<td>Abilita la funzione di checksum IPv4 solo in Tx dell'hardware
+</table> <p>
+<br>
+
+<h4> Jumbo Frame</h4>
+L'unit&agrave; di trasmissione massima (MTU) dell'Ethernet &egrave; di 1500 byte. Il jumbo frame &egrave; il frame con una lunghezza maggiore di 1500 byte.  Questa opzione pu&ograve; essere utilizzata per regolare l'unit&agrave; di trasmissione massima supportata del NIC dell'Ethernet. <p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>2KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 2K byte. <tr> 
+<td>3KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 3K byte.  <tr> 
+<td>4KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 4K byte.  <tr> 
+<td>5KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 5K byte.  <tr> 
+<td>6KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 6K byte.  <tr> 
+<td>7KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 7K byte.  <tr> 
+<td>8KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 8K byte.  <tr> 
+<td>9KB MTU  <td>Imposta la lunghezza del Jumbo Frame a 9K byte.  <tr> 
+<td>Disabilita<td> Disabilita la funzione di Jumbo Frame (impostazione predefinita) 
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li> Per abilitare la funzione Jumbo Frame &egrave; necessario che sia abilitata anche dall'altro lato.
+</ul>
+<p>
+<br>
+
+
+<h4>Large Send Offload v2(IPv4)</h4>
+Imposta la funzione di frammentazione dei pacchetti TCP dell'hardware NIC.
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione di frammentazione dei pacchetti IPv4 dell'hardware NIC (impostazione predefinita)<tr> 
+<td> Disabilitato 	<td> Disabilita la funzione di frammentazione dei pacchetti IPv4 dell'hardware NIC
+</table> <p>
+<br>
+
+<h4>Large Send Offload v2(IPv6)</h4>
+Imposta la funzione di frammentazione dei pacchetti IPv6 dell'hardware NIC
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Abilitato<td>Abilita la funzione di frammentazione dei pacchetti IPv6 dell'hardware NIC (impostazione predefinita)<tr> 
+<td> Disabilitato<td> Disabilita la funzione di frammentazione dei pacchetti IPv6 dell'hardware NIC
+</table> <p>
+<br>
+
+
+<h4> Indirizzo di rete</h4>
+Modifica l'indirizzo MAC
+<ul> 
+<ui> Impostazione predefinita: non presente
+</ul> 
+<p> <br> 
+
+<h4> Priorit&agrave; e VLAN</h4>
+I dati di IEEE 802.1Q/p consentono di indicare la priorit&agrave; dei pacchetti e la VLAN a cui appartengono. L'impostazione dell'opzione abilita la trasmissione prioritaria e il tagging/de-tagging della VLAN tramite hardware NIC.  <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th> Descrizione</th>  <tr>
+<td> Priorit&agrave; e VLAN disabilitata	<td> Disabilita le funzioni di priorit&agrave; e il tagging/de-tagging della VLAN<tr> 
+<td> Priorit&agrave; e VLAN abilitata	<td> Abilita le funzioni di priorit&agrave; e il tagging/de-tagging della VLAN dell'hardware (impostazione predefinita)<tr> 
+<td> Priorit&agrave; abilitata	<td> Abilita la funzione di priorit&agrave; dell'hardware<tr> 
+<td> VLAN abilitata	<td> Abilita la funzione di tagging/de-tagging dell'hardware
+</table> <p>
+<br>
+
+<h4>Ricevi buffer</h4> 
+Imposta le dimensioni del buffer ricevuto
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Intervallo</th>  <tr>
+<td> Dimensioni buffer ricevuto<td> 1~512 (valore predefinito: 512) 
+</table> <p>
+<br>
+
+<h4>Ricevi side scaling</h4> 
+L'RSS (Receive Side Scaling) &egrave; un meccanismo di bilanciamento del carico che serve ad assegnare dinamicamente la CPU multi-core o le varie CPU ai pacchetti ricevuti del processo.  <p> 
+<table border=1 cellspacing=4 width=85%>
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione di RSS (impostazione predefinita) <tr> 
+<td> Disabilitato<td>Disabilita la funzione di RSS
+</table> <p>
+<br>
+NOTA:
+<ul>
+<li> Fare riferimento al foglio di calcolo per accertarsi che il dispositivo di controllo della famiglia Realtek FE/GbE sia  in grado di supportare questa funzione.
+</ul> <p><br>
+
+<h4>Shutdown Wake-On-Lan</h4>
+Imposta la funzione di Wake-On-Lan dopo shutdown.
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td> Abilitato	<td> Abilita la funzione di Wake-On-Lan dopo shutdown (impostazione predefinita)<tr> 
+<td> Disabilitato	<td> Disabilita la funzione di Wake-On-Lan dopo shutdown
+</table> <p>
+<br>
+
+<h4> Velocit&agrave; e duplex</h4>
+Modifica la velocit&agrave; collegamento e la modalit&agrave; duplex<p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>&quot;Auto Negoziazione&quot;<td>  Auto negoziazione della velocit&agrave; collegamento supportata e della modalit&agrave; duplex con la periferica connessa (impostazione predefinita)<tr> 
+<td>10 Mbps Half Duplex<td>Imposta la velocit&agrave; collegamento e la modalit&agrave; duplex a 10Mbps/Half Duplex <tr> 
+<td> 10 Mbps Full Duplex<td>Imposta la velocit&agrave; collegamento e la modalit&agrave; duplex a 10Mbps/Full Duplex <tr> 
+<td> 100 Mbps Half Duplex<td>Imposta la velocit&agrave; collegamento e la modalit&agrave; duplex a 100Mbps/Half Duplex <tr>
+<td> 100 Mbps Full Duplex<td>Imposta la velocit&agrave; collegamento e la modalit&agrave; duplex a 100Mbps/Full Duplex <tr> 
+<td> 1.0 Gbps Full Duplex <td>Imposta la velocit&agrave; collegamento e la modalit&agrave; duplex a 1000Mbps/Full Duplex (*)
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) Solo i dispositivi di controllo della famiglia Gbe supportano lo standard 1.0 Gbps Full Duplex. 
+</ul>
+<p>
+<br>
+
+
+<h4>TCP Checksum Offload (IPv4)</h4> 
+Imposta la funzione di checksum TCP dell'hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Disabilitato<td>Disabilita la funzione di checksum TCP dell'hardware (IPv4)<tr>
+<td>   Rx &amp; Tx Abilitata<td> Abilita la funzione di checksum TCP sia in Tx sia in Rx dell'hardware (IPv4) (impostazione predefinita)<tr> 
+<td> Rx Abilitata<td>Abilita la funzione di checksum TCP solo in Rx dell'hardware (IPv4)<tr> 
+<td>Tx Abilitata<td>Abilita la funzione di checksum TCP solo in Tx dell'hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>TCP Checksum Offload (IPv6)</h4> 
+Imposta la funzione di checksum TCP dell'hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Disabilita<td>Disabilita la funzione di checksum TCP dell'hardware (IPv6)<tr>
+<td>  Rx &amp; Tx Abilitata<td>Abilita la funzione di checksum TCP sia in Tx sia in Rx dell'hardware (IPv6) (impostazione predefinita)<tr> 
+<td> Rx Abilitata<td>Abilita la funzione di checksum TCP solo in Rx dell'hardware (IPv6)<tr> 
+<td>Tx Abilitata<td>Abilita la funzione di checksum TCP solo in Tx dell'hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>Trasmetti buffer</h4> 
+Imposta le dimensioni del buffer trasmesso
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Intervallo</th>  <tr>
+<td> Dimensioni buffer trasmesso<td> 1~128 (valore predefinito: 128) 
+</table> <p>
+<br>
+
+<h4>UDP Checksum Offload (IPv4)</h4> 
+Imposta la funzione di checksum UDP dell'hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Disabilitato<td>Disabilita la funzione di checksum UDP dell'hardware (IPv4)<tr>
+<td>  Rx &amp; Tx Abilitata<td> Abilita la funzione di checksum UDP sia in Tx sia in Rx dell'hardware (IPv4) (impostazione predefinita)<tr> 
+<td> Rx Abilitata<td>Abilita la funzione di checksum UDP solo in Rx dell'hardware (IPv4)<tr> 
+<td>Tx Abilitata<td>Abilita la funzione di checksum UDP solo in Tx dell'hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>UDP Checksum Offload (IPv6)</h4> 
+Imposta la funzione di checksum UDP dell'hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th> Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Disabilitato<td>Disabilita la funzione di checksum UDP dell'hardware (IPv6)<tr>
+<td> Rx &amp; Tx Abilitata<td> Abilita la funzione di checksum UDP sia in Tx sia in Rx dell'hardware (IPv6) (impostazione predefinita)<tr> 
+<td> Rx Abilitata<td>Abilita la funzione di checksum UDP solo in Rx dell'hardware (IPv6)<tr> 
+<td>Tx Abilitata<td>Abilita la funzione di checksum UDP solo in Tx dell'hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>Wake on Magic Packet</h4> 
+Impostare questa funzione per abilitare l'attivazione del sistema da parte di NIC nello stato di sospensione o ibernazione mentre riceve il magic packet
+<table border=1 cellspacing=4 width=85%> 
+<th> Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Abilitato<td>Abilita la funzione Wake on magic packet (predefinito) <tr>
+<td>Disabilitato<td>Abilita la funzione Wake on magic packet (predefinito)
+</table> <p>
+<br>
+
+<h4>Wake on Pattern Match</h4> 
+Impostare questa funzione per abilitare l'attivazione del sistema da parte del NIC dallo stato di sospensione o ibernazione mentre viene ricevuto il pattern match
+<table border=1 cellspacing=4 width=85%> 
+<th> Opzioni</th> <th>Descrizione</th>  <tr>
+<td>Abilitato<td>Abilita la funzione Wake on pattern match(predefinito) <tr>
+<td>Disabilitato<td>Disabilita la funzione Wake on pattern match
+</table> <p>
+<br>
+
+<h4>Velocit&agrave; collegamento WOL e spegnimento</h4> 
+Impostare la velocit&agrave; di collegamento del NIC mentre il sistema &egrave; nello stato di sospensione, ibernazione o &egrave; spento. 
+<table border=1 cellspacing=4 width=85%> 
+<th> Opzioni</th> <th>Descrizione</th>  <tr>
+<td>10 Mbps prima<td>Impostare la velocit&agrave; di collegamento a 10 Mbps mentre il sistema &egrave; nello stato di sospensione, ibernazione o &egrave; spento (predefinito)<tr>
+<td>100 Mbps prima
+<td>Impostare la velocit&agrave; di collegamento a 100 Mbps mentre il sistema &egrave; nello stato di sospensione, ibernazione o &egrave; spento
+</table> <p>
+<br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>setup.html</title>
+
+
+
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css"></head><body><h3>驅動程式安裝</h3>
+安裝驅動程式時，請按下列步驟操作：
+<ol>
+<li>執行安裝程式檔 "setup.exe"
+</li><li>依循安裝程式中顯示的指引說明進行安裝 
+</li></ol>
+<p> 
+<br>
+
+注意:
+</p><ul>
+<li>	在隨插即用的 Windows 版本上，系統會自動尋找、識別和配置配接卡。
+	請取消作業系統自動安裝驅動程式的所有作業。</li><li>	安裝驅動程式時，您必須使用系統管理員的權限。</li>
+  <li>如果安裝/移除驅動程式時顯示亂碼，請使用AutoInst.exe再次安裝/移驅動程式。<br>
+"AutoInst.exe"的使用方式與"setup.exe"相同。<br>
+  </li>
+</ul>
+
+<p>
+<br>
+
+</p><h3>手動安裝驅動程式 </h3>
+手動安裝驅動程式是指安裝驅動程式時不使用Setup.exe程式進行安裝，而是透過INF安裝檔進行驅動程式安裝。<p>
+手動安裝時請開啟裝置管理員，展開網路介面卡裝置，選擇Realtek RTL81XX Ethernet NIC介面卡後，按下右鍵，
+執行更新驅動程式，選擇從清單或特定位置安裝(進階)，並依對話盒提示指定INF安裝檔的路徑靜進行安裝。
+</p><p> <br>
+注意：
+</p><ul>
+<li>手動安裝驅動程式是屬於進階使用者的一種安裝方式， 建議一般使用者採用setup.exe來安裝驅動程式。
+</li></ul> <p> <br>
+
+</p><h3>無訊息安裝</h3>
+
+無訊息安裝是指安裝驅動程式的過程中，不會顯示對話方塊在螢幕上以及無需使用者介入操作的背景安裝。
+若需進行無訊息安裝或移除，可於命令列視窗下，執行下列指令 <p> 
+無訊息驅動程式安裝
+</p><ul>
+<pre>C:&gt;%driver_path%\setup.exe /s<br></pre>
+</ul>
+<br>
+無訊息驅動程式移除
+<ul>
+<pre>C:&gt;%driver_path%\setup.exe /s /f1".\uninstall.iss"<br></pre>
+</ul>
+
+<br>
+
+<h3>障礙排除</h3>
+若在安裝驅動程式軟體時遇到任何問題，請重新仔細閱讀以上安裝說明及故障排除章節，並且再嘗試重新安裝一次。
+若問題仍未改善，可至本公司網站瀏覽下載最新版的驅動程式重新安裝，或與本公司技術服務部門聯絡。
+</body></html>

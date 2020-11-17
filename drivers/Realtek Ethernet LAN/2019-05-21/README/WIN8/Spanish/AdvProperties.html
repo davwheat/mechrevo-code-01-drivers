@@ -1,0 +1,272 @@
+<html >
+<head>
+<title>Propiedades avanzadas</title>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+<body>
+<h3>Propiedades avanzadas</h3>
+
+Los usuarios pueden ajustar de forma din&aacute;mica las propiedades avanzadas seg&uacute;n su entorno operativo y sus consideraciones de rendimiento.  
+Para ajustar la configuraci&oacute;n de las propiedades avanzadas, abra el Administrador de dispositivos, expanda la lista de adaptadores de red, seleccione el &quot;Controlador de la familia FE/GbE de Realtek&quot;, haga clic en &eacute;l con el bot&oacute;n secundario del rat&oacute;n y abra la opci&oacute;n &quot;Propiedades...&quot;. Aparecer&aacute; la ventana de propiedades del &quot;Controlador de la familia FE/GbE de Realtek&quot;. Seleccione la ficha de propiedades &quot;Avanzadas&quot;.  <p>
+<br>
+
+NOTA:
+<ul>
+<li> La configuraci&oacute;n de propiedades avanzadas est&aacute; destinada a usuarios avanzados. Para usuarios gen&eacute;ricos, utilice los valores predeterminados.<p>
+<li> La configuraci&oacute;n incorrecta de las propiedades avanzadas provocar&aacute; un error de conexi&oacute;n o una degradaci&oacute;n del rendimiento. Si ocurre cualquiera de ambos efectos, consulte esta secci&oacute;n para seleccionar la configuraci&oacute;n adecuada o restaure los valores predeterminados.
+</ul>
+<p> <br> 
+ 
+<hr>
+<h4> Desactivar Gigabit autom&aacute;ticamente (Ahorro de energ&iacute;a)</h4>
+A fin de reducir el consumo energ&eacute;tico, el controlador puede desactivar el modo Gigabit autom&aacute;ticamente en funci&oacute;n del estado de conexi&oacute;n del cable. 
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Desactivado 	<td> Desactiva las funciones de Desactivaci&oacute;n autom&aacute;tica de Gigabit (predeterminado)<tr> 
+<td> Reenlace, Bater&iacute;a<td> Si se utiliza la bater&iacute;a, se desactivar&aacute; el modo Gigabit al realizar un reenlace<tr> 
+<td> Reenlace, Bater&iacute;a o AC<td> Se desactivar&aacute; el modo Gigabit al reenlazar
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) Esta funci&oacute;n s&oacute;lo es compatible con el Controlador Gigabit Ethernet. 
+</ul>
+<p>
+<br>
+
+
+<h4>Control de flujo</h4>
+El Controlador de la familia FE/GbE de Realtek puede dejar temporalmente de transmitir paquetes mientras recibe paquetes de control de flujo, o bien enviar paquetes de control de flujo para solicitar una pausa al dispositivo de transmisión. Ambas acciones están destinadas a adaptar las velocidades de los dispositivos de transmisión y recepción. paquetes de control de flujo para solicitar una pausa al dispositivo correspondiente al extremo de transmisión <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Permite controlar el flujo (predeterminado)<tr> 
+<td> Desactivado	<td> Desactiva las funciones de control de flujo
+</table> <p>
+<br>
+
+<h4>Green Ethernet</h4>
+Se trata de un modo de ahorro de energ&iacute;a. El Controlador de la familia FE/GbE de Realtek puede detectar la longitud del cable conectado a fin de determinar el voltaje de salida de transmisi&oacute;n y conseguir una reducci&oacute;n en el consumo energ&eacute;tico. <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Activa la funci&oacute;n Green Ethernet<tr> 
+<td> Desactivado	<td> Desactiva la funci&oacute;n Green Ethernet
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) La configuración predeterminada depende del producto. Consulte la hoja de características para configurar esta función.
+</ul>
+<p>
+<br>
+<h4>Moderaci&oacute;n de interrupciones</h4>
+Ajusta din&aacute;micamente la frecuencia de interrupci&oacute;n de la CPU de acuerdo con el tr&aacute;fico de la red. 
+Active esta funci&oacute;n para reducir el nivel de uso de la CPU.
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Activa la funci&oacute;n de moderaci&oacute;n de interrupci&oacute;n (predeterminado)<tr> 
+<td> Desactivado	<td> Desactiva la funci&oacute;n de moderaci&oacute;n de interrupci&oacute;n
+</table> <p>
+<br>
+
+<h4>Descarga de suma de comprobaci&oacute;n IPv4</h4> 
+Define la funci&oacute;n de suma de comprobaci&oacute;n IPv4 por hardware
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n de suma de comprobaci&oacute;n IPv4 por hardware<tr>
+<td>  Rx y Tx activado<td> Activa la funci&oacute;n de suma de comprobaci&oacute;n IPv4 en Tx y Rx por hardware (predeterminado)<tr> 
+<td> Rx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n IPv4 s&oacute;lo en Rx por hardware<tr> 
+<td>Tx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n IPv4 s&oacute;lo en Tx por hardware
+</table> <p>
+<br>
+
+<h4> Trama Jumbo</h4>
+La unidad m&aacute;xima de transmisi&oacute;n (MTU) Ethernet es de 1500 bytes. La trama jumbo es una trama cuyo tama&ntilde;o es superior a 1500 bytes.  El usuario puede utilizar esta opci&oacute;n para ajustar la unidad m&aacute;xima de transmisi&oacute;n compatible con Ethernet NIC. <p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>2KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 2K bytes. <tr> 
+<td>3KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 3K bytes.  <tr> 
+<td>4KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 4K bytes.  <tr> 
+<td>5KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 5K bytes.  <tr> 
+<td>6KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 6K bytes.  <tr> 
+<td>7KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 7K bytes.  <tr> 
+<td>8KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 8K bytes.  <tr> 
+<td>9KB MTU<td>Define el tama&ntilde;o de la trama Jumbo como 9K bytes.  <tr> 
+<td>Desactivar<td> Desactiva las funciones de Trama Jumbo (predeterminado)
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li> Para activar la funci&oacute;n de Trama Jumbo, la otra parte conectada necesitar&aacute; tambi&eacute;n activar esta funci&oacute;n.
+</ul>
+<p>
+<br>
+
+
+<h4>Gran descarga de env&iacute;o v2(IPv4)</h4>
+Define la funci&oacute;n de fragmentaci&oacute;n de paquetes TCP del hardware NIC.
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Activa la funci&oacute;n de fragmentaci&oacute;n de paquetes IPv4 por hardware NIC (predeterminado)<tr> 
+<td> Desactivado 	<td> Desactiva la funci&oacute;n de fragmentaci&oacute;n de paquetes IPv4 por hardware NIC.
+</table> <p>
+<br>
+
+<h4>Gran descarga de env&iacute;o v2(IPv6)</h4>
+Define la funci&oacute;n de fragmentaci&oacute;n de paquetes IPv6 del hardware NIC
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Enabled (Activado)<td>Activa la funci&oacute;n de fragmentaci&oacute;n de paquetes IPv6 por hardware NIC (predeterminado)<tr> 
+<td> Desactivado<td> Desactiva la funci&oacute;n de fragmentaci&oacute;n de paquetes IPv6 por hardware NIC
+</table> <p>
+<br>
+
+
+<h4> Direcci&oacute;n de red</h4>
+Cambia la direcci&oacute;n MAC
+<ul> 
+<ui> Valor predeterminado: no presente
+</ul> 
+<p> <br> 
+
+<h4> Prioridad y VLAN</h4>
+La informaci&oacute;n de la norma IEEE 802.1Q/p sirve para indicar la prioridad de los paquetes y la VLAN a la que pertenecen. Configurando esta opci&oacute;n, puede transmitir con prioridad y etiquetar/desetiquetar la VLAN por medio del hardware NIC.  <p>
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th> Descripci&oacute;n</th>  <tr>
+<td> Prioridad y VLAN Desactivado	<td> Desactiva las funciones de prioridad y etiquetado/desetiquetado de VLAN<tr> 
+<td> Prioridad y VLAN Activado	<td> Activa las funciones de prioridad y etiquetado/desetiquetado de VLAN (predeterminado)<tr> 
+<td> Prioridad activada	<td> Activa la funci&oacute;n de prioridad por hardware<tr> 
+<td> VLAN Activado	<td> Activa las funciones de prioridad y etiquetado/desetiquetado de VLAN por hardware
+</table> <p>
+<br>
+
+<h4>B&uacute;feres de recepci&oacute;n</h4> 
+Define el tama&ntilde;o del b&uacute;fer de recepci&oacute;n
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Rango</th>  <tr>
+<td> Tama&ntilde;o del b&uacute;fer de recepci&oacute;n<td> 1~512 (predeterminado: 512)
+</table> <p>
+<br>
+
+<h4>Escalar parte receptora</h4> 
+El escalado de la parte receptora (RSS) es un mecanismo de equilibrio de carga que permite distribuir din&aacute;micamente el procesado de los paquetes recibidos en una CPU multin&uacute;cleo o varias CPUs.  <p> 
+<table border=1 cellspacing=4 width=85%>
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Activa la funci&oacute;n RSS (predeterminado)<tr> 
+<td> Desactivado<td>Desactiva la funci&oacute;n RSS
+</table> <p>
+<br>
+NOTA:
+<ul>
+<li> Consulte la hoja de caracter&iacute;sticas para comprobar si el Controlador de la familia FE/GbE es compatible con esta funci&oacute;n.
+</ul> <p><br>
+
+<h4>Wake-On-Lan de apagado</h4>
+Define la funci&oacute;n Wake-On-Lan despu&eacute;s de apagado.
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td> Enabled (Activado)	<td> Activa la funci&oacute;n Wake-On-Lan despu&eacute;s de apagado (predeterminado)<tr> 
+<td> Desactivado	<td> Desactiva la funci&oacute;n Wake-On-Lan despu&eacute;s de apagado
+</table> <p>
+<br>
+
+<h4> Velocidad y d&uacute;plex</h4>
+Cambia la velocidad del enlace y el modo d&uacute;plex<p>
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Autonegociaci&oacute;n<td>  Negocia autom&aacute;ticamente la velocidad del enlace y el modo d&uacute;plex con el dispositivo conectado (predeterminado)<tr> 
+<td>10 Mbps Half Duplex<td>Define la velocidad del enlace y el modo d&uacute;plex como 10Mbps/Half Duplex<tr> 
+<td> 10 Mbps Full Duplex<td>Define la velocidad del enlace y el modo d&uacute;plex como 10Mbps/Full Duplex<tr> 
+<td> 100 Mbps Half Duplex<td>Define la velocidad del enlace y el modo d&uacute;plex como 100Mbps/Half Duplex<tr>
+<td> 100 Mbps Full Duplex<td>Define la velocidad del enlace y el modo d&uacute;plex como 100Mbps/Full Duplex<tr> 
+<td> Full Duplex 1.0 Gbps<td>Define la velocidad del enlace y el modo d&uacute;plex como 1000Mbps/Full Duplex(*)
+</table> <p>
+<br>
+NOTA:
+<ul> 
+<li>  (*) S&oacute;lo el Controlador de la familia GbE admite el modo Full Duplex 1.0 Gbps. 
+</ul>
+<p>
+<br>
+
+
+<h4>Descarga de suma de comprobaci&oacute;n TCP (IPv4)</h4> 
+Define la funci&oacute;n de suma de comprobaci&oacute;n TCP por hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n de suma de comprobaci&oacute;n TCP por hardware (IPv4)<tr>
+<td>   Rx y Tx activado<td> Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP en Tx y Rx por hardware (IPv4) (predeterminado)<tr> 
+<td> Rx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP s&oacute;lo en Rx por hardware (IPv4)<tr> 
+<td>Tx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP s&oacute;lo en Tx por hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>Descarga de suma de comprobaci&oacute;n TCP (IPv6)</h4> 
+Define la funci&oacute;n de suma de comprobaci&oacute;n TCP por hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Desactivar<td>Desactiva la funci&oacute;n de suma de comprobaci&oacute;n TCP por hardware (IPv6)<tr>
+<td>  Rx y Tx activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP en Tx y Rx por hardware (IPv6) (predeterminado)<tr> 
+<td> Rx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP s&oacute;lo en Rx por hardware (IPv6)<tr> 
+<td>Tx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n TCP s&oacute;lo en Tx por hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>B&uacute;feres de transmisi&oacute;n</h4> 
+Define el tama&ntilde;o del b&uacute;fer de transmisi&oacute;n
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Rango</th>  <tr>
+<td> Tama&ntilde;o del b&uacute;fer de transmisi&oacute;n<td> 1~128 (predeterminado: 128)
+</table> <p>
+<br>
+
+<h4>Descarga de suma de comprobaci&oacute;n UDP (IPv4)</h4> 
+Define la funci&oacute;n de suma de comprobaci&oacute;n UDP por hardware (IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n de suma de comprobaci&oacute;n UDP por hardware (IPv4)<tr>
+<td>  Rx y Tx activado<td> Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP en Tx y Rx por hardware (IPv4) (predeterminado)<tr> 
+<td> Rx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP s&oacute;lo en Rx por hardware (IPv4)<tr> 
+<td>Tx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP s&oacute;lo en Tx por hardware (IPv4)
+</table> <p>
+<br>
+
+<h4>Descarga de suma de comprobaci&oacute;n UDP (IPv6)</h4> 
+Define la funci&oacute;n de suma de comprobaci&oacute;n UDP por hardware (IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th> Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n de suma de comprobaci&oacute;n UDP por hardware (IPv6)<tr>
+<td> Rx y Tx activado<td> Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP en Tx y Rx por hardware (IPv6) (predeterminado)<tr> 
+<td> Rx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP s&oacute;lo en Rx por hardware (IPv6)<tr> 
+<td>Tx Activado<td>Activa la funci&oacute;n de suma de comprobaci&oacute;n UDP s&oacute;lo en Tx por hardware (IPv6)
+</table> <p>
+<br>
+
+<h4>Reactivar con paquete m&aacute;gico</h4> 
+Configure esta funci&oacute;n para permitir que el NIC reactive el sistema si &eacute;ste se encuentra en estado de suspensi&oacute;n o hibernaci&oacute;n tras recibir un paquete m&aacute;gico.
+<table border=1 cellspacing=4 width=85%> 
+<th> Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Enabled (Activado)<td>Activa la funci&oacute;n Reactivar con paquete m&aacute;gico (predeterminado)<tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n Reactivar con paquete m&aacute;gico
+</table> <p>
+<br>
+
+<h4>Reactivar con coincidencia de patrones</h4> 
+Configure esta funci&oacute;n para permitir que el NIC reactive el sistema si &eacute;ste se encuentra en estado de suspensi&oacute;n o hibernaci&oacute;n tras recibir el patr&oacute;n coincidente.
+<table border=1 cellspacing=4 width=85%> 
+<th> Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>Enabled (Activado)<td>Activa la funci&oacute;n Reactivar con coincidencia de patrones (predeterminado)<tr>
+<td>Desactivado<td>Desactiva la funci&oacute;n Reactivar con coincidencia de patrones
+</table> <p>
+<br>
+
+<h4>WOL y Velocidad de enlace con el equipo apagado</h4> 
+Configure la velocidad de enlace que deber&aacute; adoptar el NIC cuando el sistema se encuentre en suspensi&oacute;n, en hibernaci&oacute;n o apagado. 
+<table border=1 cellspacing=4 width=85%> 
+<th> Opciones</th> <th>Descripci&oacute;n</th>  <tr>
+<td>10 Mbps preferido<td>Define la velocidad de enlace a 10 Mbps cuando el sistema se encuentra en suspensi&oacute;n, en hibernaci&oacute;n o apagado (predeterminado)<tr>
+<td>100 Mbps preferido<td>Define la velocidad de enlace a 100 Mbps cuando el sistema se encuentra en estado de suspensi&oacute;n, hibernaci&oacute;n o apagado
+</table> <p>
+<br>
+</body>
+</html>

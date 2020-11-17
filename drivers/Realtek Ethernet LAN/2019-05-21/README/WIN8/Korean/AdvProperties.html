@@ -1,0 +1,273 @@
+<html >
+<head>
+<title>고급 속성</title>
+<meta http-equiv="content-type" content="text-html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+<body>
+<h3>고급 속성</h3>
+
+사용자는 고급 속성을 운영 환경과 성능 고려사항에 따라 역동적으로 조절할 수 있습니다.  
+고급 속성의 설정을 조정하려면, [장치 관리자]를 열고 네트워크 어댑터 트리 목록을 확장한 다음 &quot;Realtek FE/GbE 계열 컨트롤러&quot;를 선택하고 마우스의 오른쪽 버튼을 클릭한 다음 [속성]의 메뉴 항목을 표시합니다. &quot;Realtek FE/GbE 계열 컨트롤러&quot; 항목이 표시되면 [고급]의 속성 시트를 선택합니다.  <p>
+<br>
+
+참고:
+<ul>
+<li> 고급 사용자의 경우 고급 속성 설정을 사용합니다. 일반 사용자의 경우 기본 값을 사용하시기 바랍니다.<p>
+<li> 고급 속성을 부적절하게 설정할 경우 연결 오류 또는 성능 저하로 이어질 수 있습니다. 그와 같은 경우가 발생하면 이 절을 참조하여 적절한 설정을 선택하거나 기본 값으로 복원하십시오.
+</ul>
+<p> <br> 
+ 
+<hr>
+<h4> 기가비트 자동 해제(전력 절약) </h4>
+절전 목적을 달성하기 위해서 드라이버는 케이블이 다시 연결될 때 기가비트를 비활성화할 수 있습니다. 
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용 안함  	<td> 기가비트 자동 해제 기능 사용 안함(기본값) <tr> 
+<td> 다시 연결, 배터리 <td> 배터리를 사용할 때 다시 연결 시 기가비트를 자동으로 사용 해제<tr> 
+<td> 다시 연결, 배터리 또는 AC<td> 다시 연결할 때 기가비트를 자동으로 사용 해제  
+</table> <p>
+<br>
+참고:
+<ul> 
+<li>  (*) 이 기능은 기가비트 이더넷 컨트롤러에서만 지원됩니다. 
+</ul>
+<p>
+<br>
+
+
+<h4>흐름 제어</h4>
+Realtek FE/GbE 계열 컨트롤러는 흐름 제어 패킷을 수신하는 동안 패킷 전송을 일시 중지하거나 흐름 제어 패킷을 전송해 송신측을 일시 정지시켜 송신측과 수신측의 속도를 일치시킬 수 있습니다.
+송신단을 일시 중지시키기 위한 흐름 제어 패킷<p>
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> 흐름 제어 기능 사용(기본값)<tr> 
+<td> 사용 안함 	<td> 흐름 제어 기능 사용 안함  
+</table> <p>
+<br>
+
+<h4>그린 이더넷</h4>
+절전 모드입니다. Realtek FE/GbE 계열 컨트롤러는 연결된 케이블의 길이를 감지해 전송 출력 전압을 측정하고 전력 소비량을 감소시킵니다. <p>
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> 그린 이더넷 기능을 사용<tr> 
+<td> 사용 안함 	<td> 그린 이더넷 기능을 사용 안 함
+</table> <p>
+<br>
+참고:
+<ul> 
+<li>  (*) 기본 설정은 제품에 따라 다릅니다. 데이터 시트를 참조해 기능을 설정하십시오.
+</ul>
+<p>
+<br>
+<h4>인터럽트 완화</h4>
+네트워크 트래픽에 따른 CPU의 인터럽트 빈도를 역동적으로 조절합니다. 
+이 기능을 활성화하면CPU 사용률을 낮출 수 있습니다.
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> 인터럽트 완화 기능 사용(기본값) <tr> 
+<td> 사용 안함 	<td> 인터럽트 완화 기능 사용 안함  
+</table> <p>
+<br>
+
+<h4>IPv4 체크섬 오프로드 </h4> 
+하드웨어별 IPv4 체크섬 기능 설정
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>사용 안함 <td>하드웨어별 IPv4 체크섬 기능 사용 안함<tr>
+<td>  Rx &amp; Tx 사용 <td> 하드웨어별 Tx 및 Rx의 IPv4 체크섬 기능 사용(기본값)<tr> 
+<td> Rx 사용 <td>하드웨어에 의해 Rx에서만 IPv4 체크섬 기능 사용<tr> 
+<td>Tx 사용 <td>하드웨어에 의해 Tx에서만 IPv4 체크섬 기능 사용
+</table> <p>
+<br>
+
+<h4> 점보 프레임</h4>
+이더넷의 최대 전송 단위(MTU)는 1500 바이트입니다. 점보 프레임은 길이가 1500 바이트보다 큰 프레임입니다.  사용자는 이 옵션을 사용하여 이더넷 NIC에 의해 지원되는 최대 전송 단위를 조절할 수 있습니다. <p>
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>2KB MTU  <td>점보 프레임의 길이를 2K 바이트로 설정합니다. <tr> 
+<td>3KB MTU  <td>점보 프레임의 길이를 3K 바이트로 설정합니다.  <tr> 
+<td>4KB MTU  <td>점보 프레임의 길이를 4K 바이트로 설정합니다.  <tr> 
+<td>5KB MTU  <td>점보 프레임의 길이를 5K 바이트로 설정합니다.  <tr> 
+<td>6KB MTU  <td>점보 프레임의 길이를 6K 바이트로 설정합니다.  <tr> 
+<td>7KB MTU  <td>점보 프레임의 길이를 7K 바이트로 설정합니다.  <tr> 
+<td>8KB MTU  <td>점보 프레임의 길이를 8K 바이트로 설정합니다.  <tr> 
+<td>9KB MTU  <td>점보 프레임의 길이를 9K 바이트로 설정합니다.  <tr> 
+<td>사용 안함  <td> 점보 프레임 기능 사용 안함(기본값)
+</table> <p>
+<br>
+참고:
+<ul> 
+<li> 점보 프레임의 기능을 사용하려면 연결된 다른 쪽에서도 기능을 사용해야 합니다.
+</ul>
+<p>
+<br>
+
+
+<h4>대량 송신 오프로드v2(IPv4)</h4>
+NIC 하드웨어별 TCP 패킷 조각화 기능 설정.
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> NIC 하드웨어별 IPv4 패킷 조각화 기능 사용(기본값) <tr> 
+<td> 사용 안함  	<td> NIC 하드웨어별 IPv4 패킷 조각화 기능 사용 안함  
+</table> <p>
+<br>
+
+<h4>대량 송신 오프로드v2(IPv6)</h4>
+NIC 하드웨어별 IPv6 패킷 조각화 기능 설정
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>사용<td>NIC 하드웨어별 IPv6 패킷 조각화 기능 사용(기본값) <tr> 
+<td> 사용 안함 <td> NIC 하드웨어별 IPv6 패킷 조각화 기능 사용 안함  
+</table> <p>
+<br>
+
+
+<h4> 네트워크 주소 </h4>
+MAC 주소 변경
+<ul> 
+<ui> 기본값: 없음
+</ul> 
+<p> <br> 
+
+<h4> 우선 순위 및 VLAN </h4>
+IEEE 802.1Q/p의 정보는 패킷 우선 순위 및 패킷이 속해 있는 VLAN을 표시합니다. 옵션을 설정하면 NIC 하드웨어에 의해 우선 순위 전송 및 VLAN 태깅/디태깅 기능을 사용할 수 있습니다.  <p>
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th> 설명</th>  <tr>
+<td> 우선 순위 및 VLAN 사용 안함	<td> 우선순위 및 VLAN 태깅/디태깅 기능 사용 안함<tr> 
+<td> 우선 순위 및 VLAN 사용	<td> 하드웨어별 우선 순위 및 VLAN 태깅/디태깅 기능 사용(기본값)<tr> 
+<td> 우선 순위 사용	<td> 하드웨어별 우선 순위 기능 사용 <tr> 
+<td> VLAN 사용	<td> 하드웨어별 VLAN 태깅/디태깅 기능 사용  
+</table> <p>
+<br>
+
+<h4>수신 버퍼</h4> 
+수신한 버퍼 크기 설정
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>범위</th>  <tr>
+<td> 수신한 버퍼 크기 <td> 1~512 (기본값:512) 
+</table> <p>
+<br>
+
+<h4>수신측 조정 </h4> 
+RSS(Receive Side Scaling)는 멀티코어 CPU 또는 다중 CPU를 수신 패킷을 처리하도록 동적으로 할당하기 위한 부하분산 메커니즘입니다.  <p> 
+<table border=1 cellspacing=4 width=85%>
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> RSS 기능 사용(기본값) <tr> 
+<td> 사용 안함 <td>RSS 기능 사용 안함
+</table> <p>
+<br>
+참고:
+<ul>
+<li> 데이터 시트를 참조해 Realtek FE/GbE 계열 컨트롤러가 이 기능을 지원할 수 있는지 확인하십시오.
+</ul> <p><br>
+
+<h4>셧다운 Wake-On-Lan </h4>
+셧다운 후 Wake-On-Lan 기능을 설정합니다.
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td> 사용	<td> 셧다운 후 Wake-On-Lan 기능 사용(기본값) <tr> 
+<td> 사용 안함 	<td> 셧다운 후 Wake-On-Lan 기능 사용 안함
+</table> <p>
+<br>
+
+<h4> 속도 및 듀플렉스</h4>
+링크 속도 및 듀플렉스 모드 변경<p>
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>자동 절충 <td>  연결된 장치를 사용하여 링크 속도 및 듀플렉스 모드를 지원하는 자동 절충 기능(기본값)<tr> 
+<td>10 Mbps 반이중 방식 <td>링크 속도와 듀플렉스 모드를 10Mbps/반이중 방식으로 설정 <tr> 
+<td> 10 Mbps 전이중 방식 <td>링크 속도와 듀플렉스 모드를 10Mbps/전이중 방식으로 설정   <tr> 
+<td> 100 Mbps 반이중 방식 <td>링크 속도와 듀플렉스 모드를 100Mbps/반이중 방식으로 설정<tr>
+<td> 100 Mbps 전이중 방식 <td>링크 속도와 듀플렉스 모드를 100Mbps/전이중 방식으로 설정 <tr> 
+<td> 1.0 Gbps 전이중 방식 <td>링크 속도와 듀플렉스 모드를 1000Mbps/전이중 방식(*)으로 설정
+</table> <p>
+<br>
+참고:
+<ul> 
+<li>  (*) Gbe 계열 컨트롤러만 1.0 Gbps 풀 듀플렉스를 지원합니다. 
+</ul>
+<p>
+<br>
+
+
+<h4>TCP 체크섬 오프로드(IPv4) </h4> 
+하드웨어별 TCP 체크섬 기능 설정(IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>사용 안함 <td>하드웨어별 TCP 체크섬 기능 사용 안함(IPv4)<tr>
+<td>   Rx &amp; Tx 사용 <td> 하드웨어별 Tx 및 Rx에서 모두 TCP 체크섬 기능 사용(기본값)<tr> 
+<td> Rx 사용 <td>하드웨어에 의해 Rx에서만 TCP 체크섬 기능 사용(IPv4)<tr> 
+<td>Tx 사용 <td>하드웨어에 의해 Tx에서만 TCP 체크섬 기능 사용(IPv4)
+</table> <p>
+<br>
+
+<h4>TCP 체크섬 오프로드(IPv6) </h4> 
+하드웨어별 TCP 체크섬 기능 설정(IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>사용 안함  <td>하드웨어별 TCP 체크섬 기능 사용 안함(IPv6)<tr>
+<td>  Rx &amp; Tx 사용 <td>하드웨어에 의해 Tx 및 Rx에서 모두 TCP 체크섬 기능 사용(IPv6)(기본값)<tr> 
+<td> Rx 사용 <td>하드웨어에 의해 Rx에서만 TCP 체크섬 기능 사용(IPv6)<tr> 
+<td>Tx 사용 <td>하드웨어에 의해 Tx에서만 TCP 체크섬 기능 사용(IPv6)  
+</table> <p>
+<br>
+
+<h4>전송 버퍼 </h4> 
+전송 버퍼 크기 설정
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>범위</th>  <tr>
+<td> 전송 버퍼 크기 <td> 1~128 (기본값:128) 
+</table> <p>
+<br>
+
+<h4>UDP 체크섬 오프로드(IPv4) </h4> 
+하드웨어별 UDP 체크섬 기능 설정(IPv4)
+<table border=1 cellspacing=4 width=85%> 
+<th>옵션 </th> <th>설명</th>  <tr>
+<td>사용 안함 <td>하드웨어별 UDP 체크섬 기능 사용 안함(IPv4)<tr>
+<td>  Rx &amp; Tx 사용 <td> 하드웨어별로 Tx 및 Rx에서 모두 UDP 체크섬 기능 사용(IPv4)(기본값)<tr> 
+<td> Rx 사용 <td>하드웨어에 의해 Rx에서만 UDP 체크섬 기능 사용(IPv4)<tr> 
+<td>Tx 사용 <td>하드웨어에 의해 Tx에서만 UDP 체크섬 기능 사용(IPv4)  
+</table> <p>
+<br>
+
+<h4>UDP 체크섬 오프로드(IPv6) </h4> 
+하드웨어별 UDP 체크섬 기능 설정(IPv6)
+<table border=1 cellspacing=4 width=85%> 
+<th> 옵션 </th> <th>설명</th>  <tr>
+<td>사용 안함 <td>하드웨어별 UDP 체크섬 기능 사용 안함(IPv6)<tr>
+<td> Rx &amp; Tx 사용 <td> 하드웨어별로 Tx 및 Rx에서 모두 UDP 체크섬 기능 사용(IPv6)(기본값)<tr> 
+<td> Rx 사용 <td>하드웨어에 의해 Rx에서만 UDP 체크섬 기능 사용(IPv6)<tr> 
+<td>Tx 사용 <td>하드웨어에 의해 Tx에서만 UDP 체크섬 기능 사용(IPv6)  
+</table> <p>
+<br>
+
+<h4>시스템 켜기 매직 패킷(Wake on Magic Packet)</h4> 
+매직 패킷을 수신하는 중에 시스템을 대기 모드 또는 최대 절전 모드에서 해제하려면 이 기능을 NIC를 활성화하도록 설정합니다. 
+<table border=1 cellspacing=4 width=85%> 
+<th> 옵션 </th> <th>설명</th>  <tr>
+<td>사용<td>시스템 켜기 매직 패킷 기능을 사용(기본값)<tr>
+<td>사용 안함 <td>시스템 켜기 매직 패킷 기능을 사용 안 함
+</table> <p>
+<br>
+
+<h4>시스템 켜기 패턴 일치(Wake on Pattern Match)</h4> 
+일치된 패턴을 수신하는 중에 시스템을 대기 모드 또는 최대 절전 모드에서 해제하려면 이 기능을 NIC를 활성화하도록 설정합니다.
+<table border=1 cellspacing=4 width=85%> 
+<th> 옵션 </th> <th>설명</th>  <tr>
+<td>사용<td>시스템 켜기 패턴 일치 기능을 사용(기본값) <tr>
+<td>사용 안함 <td>시스템 켜기 패턴 일치 기능을 사용 안 함
+</table> <p>
+<br>
+
+<h4>WOL 및 셧다운 링크 속도</h4> 
+시스템이 대기 모드, 최대 절전 모드 또는 종료 상태에 있을 때 NIC의 링크 속도를 설정합니다. 
+<table border=1 cellspacing=4 width=85%> 
+<th> 옵션 </th> <th>설명</th>  <tr>
+<td>10 Mbps 먼저<td>시스템이 대기 모드, 최대 절전 모드 또는 종료 상태에 있을 때 10 Mbps의 링크 속도를 설정합니다(기본값).<tr>
+<td>100 Mbps 먼저<td>시스템이 대기 모드, 최대 절전 모드 또는 종료 상태에 있을 때 100 Mbps의 링크 속도를 설정합니다. 
+</table> <p>
+<br>
+</body>
+</html>
