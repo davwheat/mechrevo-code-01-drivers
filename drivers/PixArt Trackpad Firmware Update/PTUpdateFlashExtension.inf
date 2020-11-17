@@ -1,0 +1,35 @@
+;
+; PTUpdateFlashExtension.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId = {D517F792-C4D3-417F-B421-9C8555650038}
+CatalogFile=PTUpdateFlashExtension.cat
+DriverVer = 10/04/2019,1.0.0.0
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%	= Standard,NTamd64
+
+[Standard.NTamd64]
+%DeviceName%		= PTUpdateFlashExtension_Device, HID\UNIW0001&Col04
+
+[PTUpdateFlashExtension_Device.NT]
+
+[PTUpdateFlashExtension_Device.NT.Components]
+AddComponent=PTDriverUpdater,,AddComponentSection
+
+[AddComponentSection]
+ComponentIDs		= PTFlashUpdater
+
+[Strings]
+ManufacturerName	= "PixArt Imaging Inc."
+DiskName		= "PTUpdateFlashExtension Installation Disk"
+DeviceName		= "Pixart UpdateFlash Extension Device"

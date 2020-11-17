@@ -12,6 +12,14 @@ The MECHREVO CODE 01 is also known as
 - Schenker VIA 15 PRO
 - Eluktronics MAG-15u
 
+## Firmware update list
+
+### PixArt trackpad
+
+Please read [the warning about this firmware file](drivers/PixArt%20Trackpad%20Firmware%20Update/README.md).
+
+This is a firmware update for the **plastic** trackpad in most versions of the PF5NU1G.
+
 ## Driver list
 
 ### IR Camera
